@@ -6,9 +6,5 @@ import { Button, Header } from '@/components';
 const cx = classNames.bind(styles);
 
 export default function Home() {
-  return (
-    <div className={cx('page')}>
-      <Header />
-    </div>
-  );
+  return <div className={cx('page')}></div>;
 }

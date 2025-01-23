@@ -1,0 +1,24 @@
+.header {
+  padding: 24px 32px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bl {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    font-size: 48px;
+  }
+  .desc {
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 110px;
+    opacity: 0.8;
+  }
+}
