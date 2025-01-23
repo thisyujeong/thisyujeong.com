@@ -1,0 +1,182 @@
+/* default */
+body,
+div,
+span,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+iframe,
+th,
+td,
+pre {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+fieldset,
+iframe,
+button {
+  border: 0 none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  outline-offset: -1px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+html,
+body {
+  line-height: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+/* Form */
+legend {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+select,
+input,
+label {
+  vertical-align: middle;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type='file'] {
+  padding: 0;
+  border: 0;
+}
+
+select:focus,
+input[type='text']:focus,
+input[type='radio']:focus,
+input[type='checkbox']:focus,
+input[type='file'],
+textarea:focus {
+  outline: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
+}
+
+textarea {
+  resize: none;
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0 none;
+  background: none;
+  outline: none;
+}
+
+body {
+  font-family: var(--font-pretendard), 'Apple SD Gothic Neo', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  word-wrap: break-word;
+  word-break: keep-all;
+  color: #000000;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    font-family: var(--font-pretendard), 'Apple SD Gothic Neo', sans-serif;
+  }
+}
