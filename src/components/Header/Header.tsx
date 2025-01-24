@@ -26,7 +26,7 @@ const Header = () => {
           <div className={cx('desc')}>
             Frontend UX Engineer
             <br />
-            ©thisyujeong
+            ©thisyujeong 2025
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const Header = () => {
               <div className={cx('dropdown_popover-inner')}>
                 <ul>
                   {sites.map(({ id, label, path }) => (
-                    <li>
+                    <li key={id}>
                       <Link href={path} target="_blank">
                         {label}
                       </Link>
