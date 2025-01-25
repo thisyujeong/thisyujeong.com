@@ -3,27 +3,27 @@ import localFont from 'next/font/local';
 const pretendard = localFont({
   src: [
     {
-      path: '../../../public/assets/fonts/Pretendard-Light.ttf',
+      path: '../../assets/fonts/Pretendard-Light.ttf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../../../public/assets/fonts/Pretendard-Regular.ttf',
+      path: '../../assets/fonts/Pretendard-Regular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../../../public/assets/fonts/Pretendard-Medium.ttf',
+      path: '../../assets/fonts/Pretendard-Medium.ttf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: '../../../public/assets/fonts/Pretendard-SemiBold.ttf',
+      path: '../../assets/fonts/Pretendard-SemiBold.ttf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '../../../public/assets/fonts/Pretendard-Bold.ttf',
+      path: '../../assets/fonts/Pretendard-Bold.ttf',
       weight: '700',
       style: 'normal',
     },
@@ -34,7 +34,7 @@ const pretendard = localFont({
 const safiro = localFont({
   src: [
     {
-      path: '../../../public/assets/fonts/Safiro-Medium.otf',
+      path: '../../assets/fonts/Safiro-Medium.otf',
       weight: '400',
       style: 'normal',
     },

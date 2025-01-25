@@ -19,7 +19,7 @@ const initialSizes: Sizes = {
   aspect: window.innerWidth / window.innerHeight,
 };
 
-const KeyCanvas = () => {
+const BackgroundCanvas = () => {
   const [sizes, setSizes] = useState<Sizes>(initialSizes);
 
   // canvas resizing handle
@@ -46,11 +46,12 @@ const KeyCanvas = () => {
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <color attach="background" args={['#131313']} />
-        {/*  */}
+
+        {/* <color attach="background" args={['#ebebeb']} /> */}
         <Particles />
       </Canvas>
     </div>
   );
 };
 
-export default KeyCanvas;
+export default BackgroundCanvas;
