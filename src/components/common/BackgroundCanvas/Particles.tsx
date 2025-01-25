@@ -3,8 +3,8 @@
 import { useFrame, useThree } from '@react-three/fiber';
 import React, { useMemo, useRef } from 'react';
 import * as THREE from 'three';
-import vertexShader from '@/assets/shaders/vertex.glsl';
-import fragmentShader from '@/assets/shaders/fragmentShader.glsl';
+import vertexShader from '@public/assets/shaders/vertexShader.glsl';
+import fragmentShader from '@public/assets/shaders/fragmentShader.glsl';
 
 const Particles = () => {
   const ref = useRef<THREE.ShaderMaterial>(null);

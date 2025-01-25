@@ -3,7 +3,7 @@
 
 .footer {
   position: relative;
-  padding: 100px 0 140px;
+  padding: 100px 0 120px;
   text-align: center;
 
   &:before {
@@ -23,29 +23,30 @@
 .message span {
   font-size: clamp(16px, desktop-vw(165px), 165px);
   font-family: var(--font-safiro);
-  line-height: 0.9;
   font-style: italic;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
 }
 
 .contact {
   text-align: right;
-  padding-right: 32px;
+  padding-right: 16px;
 }
 
 .contact button {
   padding: 8px 20px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-family: var(--font-safiro);
   text-transform: capitalize;
   border-radius: 100px;
   border: 2px solid $text-color;
   color: $text-color;
-  margin-bottom: 20px;
 
   span {
     font: inherit;
     padding-right: 30px;
-    background-image: url('../../../assets/images/ico/ic-arrow-up-right_bk.svg');
+    background-image: url('/assets/images/ico/ic-arrow-up-right_bk.svg');
     background-size: 24px;
     background-position: right center;
     background-repeat: no-repeat;
@@ -54,6 +55,6 @@
 
 .copyright {
   margin-top: 20px;
-  opacity: 0.7;
   font-weight: 300;
+  opacity: 0.7;
 }
