@@ -59,7 +59,7 @@ const BackgroundCanvas = () => {
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <color attach="background" args={[bgColor]} />
         <Particles />
-        <ObjectGeometry />
+        {/* <ObjectGeometry /> */}
       </Canvas>
     </div>
   );

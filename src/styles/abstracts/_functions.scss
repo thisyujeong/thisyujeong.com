@@ -1,0 +1,5 @@
+@import './variables';
+
+@function desktop-vw($val, $base: $container-width) {
+  @return calc($val / $base) * 100vw;
+}

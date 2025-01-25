@@ -1,11 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { useFrame, useLoader } from '@react-three/fiber';
+import { useFrame, useLoader, useThree } from '@react-three/fiber';
 import { RGBELoader } from 'three/examples/jsm/Addons.js';
+import { useControls } from 'leva';
 
 const ObjectGeometry = () => {
   const hdrTexture = useLoader(RGBELoader, '/assets/empty_warehouse_01_2k.hdr');
   const meshRef = useRef<THREE.Mesh>(null);
+  const { viewport } = useThree(); // UPDATED
+
+  const { torusColor } = useControls({ torusColor: '#ebebeb' });
 
   useEffect(() => {
     if (hdrTexture) {
@@ -16,6 +20,9 @@ const ObjectGeometry = () => {
   useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.y += 0.01;
+
+      const scaleFactor = Math.min(viewport.width, viewport.height) / 60;
+      meshRef.current.scale.set(scaleFactor, scaleFactor, scaleFactor);
     }
   });
 
@@ -30,6 +37,7 @@ const ObjectGeometry = () => {
         transmission={1}
         thickness={1}
         envMap={hdrTexture}
+        color={new THREE.Color(torusColor)}
       />
     </mesh>
   );

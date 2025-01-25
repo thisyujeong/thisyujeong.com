@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 export default function Home() {
   return (
     <div className={cx('page')}>
-      <div className={cx('bg-layer')}>
+      <div className={cx('canvas')}>
         <BackgroundCanvas />
       </div>
       <div className={cx('content')}>

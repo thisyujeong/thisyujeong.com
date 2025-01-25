@@ -1,21 +1,18 @@
-.bg-layer {
+.canvas {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .content {
   padding-top: 116px;
   position: relative;
   z-index: 1;
-}
-
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 40px;
+  min-height: 100vh;
 }
 
 .key-visual {

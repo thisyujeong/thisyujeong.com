@@ -40,7 +40,7 @@ const Particles = () => {
       uResolution: new THREE.Uniform(
         new THREE.Vector2(size.width * viewport.dpr, size.height * viewport.dpr)
       ),
-      uColor: new THREE.Uniform(new THREE.Color('#5d5d5d')),
+      uColor: new THREE.Uniform(new THREE.Color('#ffffff')),
     }),
     [size, viewport]
   );
