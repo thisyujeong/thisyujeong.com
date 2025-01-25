@@ -4,8 +4,9 @@
 @import './abstracts/functions';
 
 body {
-  background-color: #f8f7f4;
-  background-color: #131313;
+  color: $text-color;
+  font-size: 20px;
+  background-color: $background-color;
 }
 
 .container {

@@ -1,7 +1,7 @@
 // import type { Metadata } from 'next';
 import '@/styles/globals.scss';
 import { pretendard, safiro } from '@/styles/base/fonts';
-import { Header } from '@/components';
+import { Header } from '@/components/common';
 
 export default function RootLayout({
   children,

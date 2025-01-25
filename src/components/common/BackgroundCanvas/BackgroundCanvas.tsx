@@ -22,7 +22,7 @@ const BackgroundCanvas = () => {
   });
 
   /* debugger */
-  const { bgColor } = useControls({ bgColor: '#131313' });
+  const { bgColor } = useControls({ bgColor: '#ebebeb' });
 
   // canvas resizing handle
   useEffect(() => {
@@ -57,8 +57,6 @@ const BackgroundCanvas = () => {
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <color attach="background" args={[bgColor]} />
-
-        {/* <color attach="background" args={['#ebebeb']} /> */}
         <Particles />
       </Canvas>
     </div>

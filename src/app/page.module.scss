@@ -1,0 +1,33 @@
+.bg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  padding-top: 116px;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.key-visual {
+  padding: 120px 0;
+  h2 {
+    font-size: clamp(16px, calc(200 / 1920 * 100vw), 200px);
+    font-family: var(--font-safiro);
+  }
+
+  h3 {
+    margin-top: 24px;
+    font-size: clamp(16px, calc(50 / 1920 * 100vw), 50px);
+    font-weight: 300;
+  }
+}
