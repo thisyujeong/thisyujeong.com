@@ -23,6 +23,7 @@
   h2 {
     font-size: clamp(16px, calc(200 / 1920 * 100vw), 200px);
     font-family: var(--font-safiro);
+    line-height: 1;
   }
 
   h3 {

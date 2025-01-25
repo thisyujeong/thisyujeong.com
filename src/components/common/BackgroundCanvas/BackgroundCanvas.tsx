@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Particles from './Particles';
 import { useControls } from 'leva';
+import Particles from './Particles';
+import ObjectGeometry from './ObjectGeometry';
 
 interface Sizes {
   width: number;
@@ -37,14 +38,13 @@ const BackgroundCanvas = () => {
 
     // 초기 설정
     resizeHandler();
-
     window.addEventListener('resize', resizeHandler);
     return () => window.removeEventListener('resize', resizeHandler);
   }, []);
 
   // 초기 렌더링에서 sizes가 설정되지 않을 때 빈 화면 방지
   if (!sizes.width || !sizes.height) {
-    return null; // 사이즈가 설정될 때까지 아무것도 렌더링하지 않음
+    return null;
   }
 
   return (
@@ -54,10 +54,12 @@ const BackgroundCanvas = () => {
         style={{ width: sizes.width, height: sizes.height }}
         camera={{ position: [0, 0, 80], fov: 35, near: 0.1, far: 1000 }}
       >
+        {/* <OrbitControls /> */}
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <color attach="background" args={[bgColor]} />
         <Particles />
+        <ObjectGeometry />
       </Canvas>
     </div>
   );
