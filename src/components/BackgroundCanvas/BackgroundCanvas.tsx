@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import Particles from './Particles';
+import { useControls } from 'leva';
 
 interface Sizes {
   width: number;
@@ -21,6 +22,9 @@ const initialSizes: Sizes = {
 
 const BackgroundCanvas = () => {
   const [sizes, setSizes] = useState<Sizes>(initialSizes);
+
+  /* debugger */
+  const { bgColor } = useControls({ bgColor: '#131313' });
 
   // canvas resizing handle
   useEffect(() => {
@@ -45,7 +49,7 @@ const BackgroundCanvas = () => {
       >
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-        <color attach="background" args={['#131313']} />
+        <color attach="background" args={[bgColor]} />
 
         {/* <color attach="background" args={['#ebebeb']} /> */}
         <Particles />
