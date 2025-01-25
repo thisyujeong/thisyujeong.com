@@ -2,6 +2,7 @@
 
 import React, { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 
+/* eslint-disable @typescript-eslint/no-empty-object-type */
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button = ({ onClick, children, ...props }: PropsWithChildren<ButtonProps>) => {
