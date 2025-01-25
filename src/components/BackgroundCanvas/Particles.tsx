@@ -5,7 +5,6 @@ import React, { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import vertexShader from '@/assets/shaders/vertex.glsl';
 import fragmentShader from '@/assets/shaders/fragmentShader.glsl';
-import { useControls } from 'leva';
 
 const Particles = () => {
   const ref = useRef<THREE.ShaderMaterial>(null);

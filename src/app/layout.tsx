@@ -2,7 +2,6 @@
 import '@/styles/globals.scss';
 import { pretendard, safiro } from '@/styles/base/fonts';
 import { Header } from '@/components';
-import { Leva } from 'leva';
 
 export default function RootLayout({
   children,
