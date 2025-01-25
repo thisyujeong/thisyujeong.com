@@ -13,15 +13,13 @@ interface Sizes {
   pixelRatio: number;
 }
 
-const initialSizes: Sizes = {
-  width: window.innerWidth,
-  height: window.innerHeight,
-  pixelRatio: Math.min(window.devicePixelRatio, 2),
-  aspect: window.innerWidth / window.innerHeight,
-};
-
 const BackgroundCanvas = () => {
-  const [sizes, setSizes] = useState<Sizes>(initialSizes);
+  const [sizes, setSizes] = useState<Sizes>({
+    width: 0,
+    height: 0,
+    pixelRatio: 1,
+    aspect: 1,
+  });
 
   /* debugger */
   const { bgColor } = useControls({ bgColor: '#131313' });
@@ -36,9 +34,18 @@ const BackgroundCanvas = () => {
         aspect: window.innerWidth / window.innerHeight,
       });
     };
+
+    // 초기 설정
+    resizeHandler();
+
     window.addEventListener('resize', resizeHandler);
     return () => window.removeEventListener('resize', resizeHandler);
   }, []);
+
+  // 초기 렌더링에서 sizes가 설정되지 않을 때 빈 화면 방지
+  if (!sizes.width || !sizes.height) {
+    return null; // 사이즈가 설정될 때까지 아무것도 렌더링하지 않음
+  }
 
   return (
     <div>
