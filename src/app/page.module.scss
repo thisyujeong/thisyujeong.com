@@ -1,3 +1,5 @@
+@import '@/styles/abstracts/functions';
+
 .canvas {
   position: fixed;
   top: 0;
@@ -18,14 +20,27 @@
 .key-visual {
   padding: 120px 0;
   h2 {
-    font-size: clamp(16px, calc(200 / 1920 * 100vw), 200px);
+    font-size: clamp(16px, desktop-vw(150px), 150px);
     font-family: var(--font-safiro);
     line-height: 1;
   }
 
+  p {
+    font-size: clamp(16px, desktop-vw(42px), 42px);
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+}
+
+.section {
+  padding: 120px 0;
+
   h3 {
-    margin-top: 24px;
-    font-size: clamp(16px, calc(50 / 1920 * 100vw), 50px);
-    font-weight: 300;
+    text-transform: capitalize;
+    font-family: var(--font-safiro);
+    font-size: 70px;
+    font-weight: 400;
+    border-bottom: 3px solid $basic-black;
+    padding-bottom: 16px;
   }
 }

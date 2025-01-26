@@ -1,0 +1,115 @@
+@import '@/styles/abstracts/functions';
+.card {
+  position: relative;
+  padding: 32px 0;
+  border-bottom: 2px solid $basic-black;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    background: $basic-black;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 100%;
+    display: none;
+  }
+  &:hover {
+    color: $basic-white;
+    &:before {
+      display: block;
+    }
+    .card-inner {
+      background-image: url('/assets/images/ico/ic-plus-wh.svg');
+    }
+  }
+  &:nth-child(3n) .card-inner {
+    border: 0;
+  }
+  &:nth-child(3n + 1):nth-last-child(-n + 3) {
+    border: 0;
+  }
+  &:nth-child(3n + 2):nth-last-child(-n + 2) {
+    border: 0;
+  }
+  &:nth-child(3n + 3):nth-last-child(-n + 1) {
+    border: 0;
+  }
+}
+
+.card-inner {
+  position: relative;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid $basic-black;
+  background-image: url('/assets/images/ico/ic-plus-bk.svg');
+  background-position: calc(100% - 12px) -4px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.card-heading {
+  .title {
+    padding-right: 32px;
+    min-height: calc(34px * 1.2 * 2);
+    font-size: 34px;
+    font-family: var(--font-safiro);
+    line-height: 1.2;
+    white-space: pre-wrap;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+}
+
+.tag-list {
+  display: flex;
+  margin: 12px 0;
+  gap: 8px;
+  flex-wrap: wrap;
+  .tag-item {
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 99px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    white-space: nowrap;
+  }
+}
+
+.card-content {
+  padding-top: 24px;
+  .thumbnail {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    margin-top: auto;
+    background: rgb(217 215 215);
+    border-radius: 10px;
+    &:before {
+      content: '*';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 50px;
+      opacity: 0.3;
+      color: $basic-white;
+      font-size: 100px;
+      line-height: 0.8;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}

@@ -94,6 +94,7 @@ const Particles = () => {
         vertexColors={true}
         blending={THREE.AdditiveBlending}
         side={THREE.DoubleSide}
+        depthWrite={false}
       />
     </points>
   );
