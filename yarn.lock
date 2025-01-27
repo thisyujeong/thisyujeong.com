@@ -96,6 +96,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gsap/react@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@gsap/react@npm:2.1.2"
+  peerDependencies:
+    gsap: ^3.12.5
+    react: ">=17"
+  checksum: 237288d9923a5c0f243a7986e655cb09ab600db7cc117d6329334f1e895e31567635ca53587aabf65924e0cc02887b054aeda5f0b04c7d2091c95e75f7d8162d
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.13.0":
   version: 0.13.0
   resolution: "@humanwhocodes/config-array@npm:0.13.0"
@@ -5095,6 +5105,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "thisyujeong-com@workspace:."
   dependencies:
+    "@gsap/react": ^2.1.2
     "@react-spring/three": ^9.7.5
     "@react-three/drei": ^9.121.3
     "@react-three/fiber": ^8.17.12
