@@ -86,15 +86,22 @@
 }
 
 .card-content {
-  padding-top: 24px;
+  padding-top: desktop-vw(24px);
   .thumbnail {
     position: relative;
     overflow: hidden;
-    height: 300px;
     width: 100%;
     margin-top: auto;
     background: rgb(217 215 215);
     border-radius: 10px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: relative;
+      padding-bottom: 64%;
+    }
+
     &:before {
       content: '*';
       display: block;

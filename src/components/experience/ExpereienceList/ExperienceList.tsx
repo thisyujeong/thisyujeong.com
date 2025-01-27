@@ -33,7 +33,7 @@ const examples = [
     description:
       '제약 바이오 기업을 대상으로 토탈 솔루션 및 컨설팅 서비스를 제공하는 전문 에이전시의 공식 홈페이지',
     tags: ['Javascript', 'HTML/CSS', 'SCSS', 'GSAP', 'Three.js', 'Webpack'],
-    thumbnailUrl: '/assets/images/thumbnail-innoboost_1.png',
+    thumbnailUrl: '/assets/images/thumbnail-innoboost.png',
   },
   {
     title: '삼성전자 \nSamsung Experience Plus',

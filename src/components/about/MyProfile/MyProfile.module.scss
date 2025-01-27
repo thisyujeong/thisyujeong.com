@@ -1,0 +1,17 @@
+@import '@/styles/abstracts/functions';
+
+.image {
+  position: relative;
+  width: desktop-vw(400px);
+
+  &:before {
+    content: '';
+    padding-bottom: 140%;
+    position: relative;
+    display: block;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

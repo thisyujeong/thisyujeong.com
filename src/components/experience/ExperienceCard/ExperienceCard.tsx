@@ -36,7 +36,7 @@ const ExperienceCard = ({
         <div className={cx('card-content')}>
           {thumbnailUrl && (
             <div className={cx('thumbnail')}>
-              <Image src={thumbnailUrl} alt={title} fill />
+              <Image src={thumbnailUrl} alt={title} fill sizes="100%" priority />
             </div>
           )}
         </div>

@@ -1,7 +1,8 @@
 import { BackgroundCanvas } from '@/components/common';
+import { ExperienceList } from '@/components/experience';
+import { MyProfile } from '@/components/about';
 import styles from './page.module.scss';
 import classNames from 'classnames/bind';
-import { ExperienceList } from '@/components/experience';
 
 const cx = classNames.bind(styles);
 
@@ -22,6 +23,9 @@ export default function Home() {
               <br />
               UX Engineer
             </h2>
+          </section>
+          <section className={cx('section')}>
+            <MyProfile />
           </section>
           <section className={cx('section')}>
             <h3>Career</h3>
