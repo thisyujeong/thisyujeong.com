@@ -19,10 +19,8 @@ const PlaneMesh = () => {
 
   /* Texture */
   const texture = useTexture('/assets/images/profile.jpg');
-  const { width, height } = texture.image;
+  const { width, height } = texture?.image || { width: 1, height: 1 }; // 기본값 추가
   const scale = useAspect(width, height, 0.25);
-
-  if (!texture) return null;
 
   /* Uniforms */
   const uniforms = useRef({
@@ -65,6 +63,8 @@ const PlaneMesh = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [scale]);
+
+  if (!texture) return null;
 
   return (
     <>
