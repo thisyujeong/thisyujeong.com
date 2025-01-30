@@ -36,19 +36,21 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
     setIsOpen(false);
   }, []);
 
-  const value = useMemo(() => ({ showModal, hideModal }), []);
+  const value = useMemo(() => ({ showModal, hideModal }), [showModal, hideModal]);
 
   return (
     <ModalContext.Provider value={value}>
       {children}
-      <Modal
-        isOpen={isOpen}
-        onClose={() => {
-          modalOptions?.onClose?.();
-          hideModal();
-        }}
-        {...modalOptions}
-      />
+      {!modalOptions ? null : (
+        <Modal
+          isOpen={isOpen}
+          onClose={() => {
+            modalOptions?.onClose?.();
+            hideModal();
+          }}
+          {...modalOptions}
+        />
+      )}
     </ModalContext.Provider>
   );
 };
