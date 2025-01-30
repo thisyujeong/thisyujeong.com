@@ -3,21 +3,15 @@
 
 .footer {
   position: relative;
-  padding: 100px 0 120px;
   text-align: center;
+  padding: 40px;
 
-  // &:before {
-  //   content: '';
-  //   display: block;
-  //   background: linear-gradient(0deg, #b8d5d4 20%, transparent);
-  //   pointer-events: none;
-  //   height: 600px;
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   z-index: -1;
-  // }
+  > div {
+    background-color: $basic-black;
+    border-radius: 40px;
+    padding: 100px 0 120px;
+    color: $basic-white;
+  }
 }
 
 .message span {
@@ -29,24 +23,23 @@
 }
 
 .contact {
-  text-align: right;
-  padding-right: 16px;
+  text-align: center;
+  margin: 32px 0;
 }
 
 .contact button {
   padding: 8px 20px;
-  margin-bottom: 20px;
   font-size: 24px;
   font-family: var(--font-safiro);
   text-transform: capitalize;
   border-radius: 100px;
-  border: 2px solid $text-color;
-  color: $text-color;
+  border: 2px solid $basic-white;
+  color: $basic-white;
 
   span {
     font: inherit;
     padding-right: 30px;
-    background-image: url('/assets/images/ico/ic-arrow-up-right_bk.svg');
+    background-image: url('/assets/images/ico/ic-arrow-up-right_wh.svg');
     background-size: 24px;
     background-position: right center;
     background-repeat: no-repeat;

@@ -21,7 +21,7 @@ const ProfileCanvas = () => {
   });
 
   /* debugger */
-  const { profileCanvasBg } = useControls({ profileCanvasBg: '#ebebeb' });
+  const { profileCanvasBg } = useControls({ profileCanvasBg: '#fffcef' });
 
   useEffect(() => {
     const resizeHandler = () => {

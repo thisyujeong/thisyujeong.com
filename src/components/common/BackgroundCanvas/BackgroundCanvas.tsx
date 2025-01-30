@@ -23,7 +23,7 @@ const BackgroundCanvas = () => {
   });
 
   /* debugger */
-  const { bgColor } = useControls({ bgColor: '#ebebeb' });
+  const { bgColor } = useControls({ bgColor: '#fffcef' });
 
   // canvas resizing handle
   useEffect(() => {
