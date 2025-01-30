@@ -12,6 +12,10 @@ body {
   font-size: 20px;
   background-color: $background-color;
   overflow-x: hidden;
+
+  &.scroll-lock {
+    overflow: hidden;
+  }
 }
 
 .container {

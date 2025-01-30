@@ -3,10 +3,13 @@ import { ExperienceList } from '@/components/experience';
 import { MyProfile } from '@/components/about';
 import styles from './page.module.scss';
 import classNames from 'classnames/bind';
+import { getSortedPostsData } from '@/service/experiences';
 
 const cx = classNames.bind(styles);
 
 export default function Home() {
+  const postList = getSortedPostsData();
+
   return (
     <div className={cx('page')}>
       <div className={cx('canvas')}>
@@ -57,7 +60,7 @@ export default function Home() {
           </section>
           <section className={cx('section')}>
             <h3 id="experience">Work Experience</h3>
-            <ExperienceList />
+            <ExperienceList data={postList} />
           </section>
 
           <section className={cx('section', 'history')}>

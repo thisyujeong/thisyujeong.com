@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-// import { useControls } from 'leva';
 import { Mesh, ShaderMaterial } from 'three';
 import { useFrame } from '@react-three/fiber';
 import { vertex, fragment } from './shader';
@@ -12,13 +11,6 @@ const waveLength = 6.8;
 
 const PlaneMesh = () => {
   const plane = useRef<Mesh>(null);
-
-  /* Debugger */
-  // const { time, amplitude, waveLength } = useControls({
-  //   time: { value: 0.1, min: 0, max: 0.5, step: 0.01 },
-  //   amplitude: { value: 0.35, min: 0, max: 5, step: 0.05 },
-  //   waveLength: { value: 6.8, min: 0, max: 20, step: 0.1 },
-  // });
 
   /* Texture */
   const texture = useTexture('/assets/images/profile.jpg');
@@ -36,9 +28,6 @@ const PlaneMesh = () => {
   useGSAP(() => {
     if (plane.current) {
       plane.current.rotateZ((Math.PI / 180) * 10);
-      /* gsap.to(plane.current.rotation, {
-        z: degreeToRadian(90),
-      }); */
     }
   });
 
