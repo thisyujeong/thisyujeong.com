@@ -21,7 +21,7 @@ const PlaneMesh = () => {
   // });
 
   /* Texture */
-  const texture = useTexture('/assets/images/profile-color.jpg');
+  const texture = useTexture('/assets/images/profile.jpg');
   const { width, height } = texture?.image || { width: 1, height: 1 }; // 기본값 추가
   const scale = useAspect(width, height, 0.65);
 
