@@ -76,11 +76,11 @@
   gap: 8px;
   flex-wrap: wrap;
   .tag-item {
-    padding: 4px 10px;
+    padding: 4px 4px;
     font-size: 16px;
     border-radius: 99px;
     color: $primary-color;
-    border: 1px solid $primary-color;
+    // border: 1px solid $primary-color;
     white-space: nowrap;
   }
 }

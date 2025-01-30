@@ -25,7 +25,7 @@ const Header = () => {
               </Link>
             </h1>
             <div className={cx('desc')}>
-              Frontend UX Engineer
+              Web Frontend Developer
               <br />
               ©thisyujeong 2025
             </div>

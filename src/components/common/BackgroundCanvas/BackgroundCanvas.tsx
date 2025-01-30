@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { useControls } from 'leva';
 import Particles from './Particles';
 import ObjectGeometry from './ObjectGeometry';
 
@@ -21,9 +19,6 @@ const BackgroundCanvas = () => {
     pixelRatio: 1,
     aspect: 1,
   });
-
-  /* debugger */
-  const { bgColor } = useControls({ bgColor: '#fffcef' });
 
   // canvas resizing handle
   useEffect(() => {
@@ -51,13 +46,12 @@ const BackgroundCanvas = () => {
     <div>
       <Canvas
         id="key-canvas"
+        gl={{ alpha: true }}
         style={{ width: sizes.width, height: sizes.height }}
         camera={{ position: [0, 0, 80], fov: 35, near: 0.1, far: 1000 }}
       >
-        {/* <OrbitControls /> */}
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-        <color attach="background" args={[bgColor]} />
         <Particles />
         {/* <ObjectGeometry /> */}
       </Canvas>

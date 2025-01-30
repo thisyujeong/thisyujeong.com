@@ -15,17 +15,21 @@ export default function Home() {
       <div className={cx('content')}>
         <div className={cx('container')}>
           <section className={cx('key-visual')}>
-            <p>
-              웹 프론트엔드 UX 엔지니어 <strong>이유정</strong>
-            </p>
-            <h2>
-              Web Frontend
-              <br />
-              UX Engineer
-            </h2>
+            <div className={cx('key-visual_text')}>
+              <p>
+                웹 프론트엔드 개발자 <strong>이유정</strong>
+              </p>
+              <h2>
+                Web <strong>Frontend</strong>
+                <br />
+                Developer
+              </h2>
+            </div>
           </section>
           <section className={cx('section')}>
-            <MyProfile />
+            <div className={cx('profile')}>
+              <MyProfile />
+            </div>
           </section>
           <section className={cx('section')}>
             <h3>Career</h3>

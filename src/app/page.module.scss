@@ -11,30 +11,47 @@
 }
 
 .content {
-  padding-top: 116px;
+  // padding-top: 116px;
   position: relative;
   z-index: 1;
   min-height: 100vh;
 }
 
 .key-visual {
-  padding: 120px 0;
-  h2 {
-    font-size: clamp(16px, desktop-vw(150px), 150px);
-    font-family: var(--font-safiro);
-    line-height: 1;
-    font-weight: normal;
+  padding: 240px 0 120px;
+  position: relative;
+  &_canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
   }
+  &_text {
+    // position: absolute;
+    // text-align: center;
+    // bottom: 0;
+    // left: 0;
+    // width: 100%;
+    h2 {
+      font-size: clamp(16px, desktop-vw(150px), 150px);
+      font-family: var(--font-safiro);
+      line-height: 1;
+      font-weight: normal;
+    }
 
-  p {
-    font-size: clamp(16px, desktop-vw(42px), 42px);
-    font-weight: 400;
-    margin-bottom: 16px;
+    p {
+      font-size: clamp(16px, desktop-vw(42px), 42px);
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
   }
 }
 
 .section {
   padding: 120px 0;
+  // background-color: $basic-black;
+  // color: $basic-white;
 
   h3 {
     text-transform: capitalize;

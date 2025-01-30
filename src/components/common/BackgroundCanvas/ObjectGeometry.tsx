@@ -9,7 +9,7 @@ const ObjectGeometry = () => {
   const meshRef = useRef<THREE.Mesh>(null);
   const { viewport } = useThree(); // UPDATED
 
-  const { torusColor } = useControls({ torusColor: '#ebebeb' });
+  // const { torusColor } = useControls({ torusColor: '#c1c1c1' });
 
   useEffect(() => {
     if (hdrTexture) {
@@ -31,13 +31,13 @@ const ObjectGeometry = () => {
       ref={meshRef}
       rotation={[(Math.PI / 180) * 30, (Math.PI / 180) * 30, (Math.PI / 180) * 45]}
     >
-      <torusGeometry args={[15, 6, 50, 100]} />
+      <torusGeometry args={[10, 4, 25, 40]} />
       <meshPhysicalMaterial
         roughness={0}
         transmission={1}
         thickness={1}
         envMap={hdrTexture}
-        color={new THREE.Color(torusColor)}
+        color={new THREE.Color('#c1c1c1')}
       />
     </mesh>
   );
