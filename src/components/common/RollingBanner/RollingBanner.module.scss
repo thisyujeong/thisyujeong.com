@@ -1,0 +1,17 @@
+@import '@/styles/abstracts/functions';
+
+.rolling {
+}
+
+.rolling-inner {
+  display: flex;
+  white-space: nowrap;
+  gap: 24px;
+  transform: translateX(-50%);
+}
+
+.rolling-text {
+  color: #dbdcdf;
+  font-size: desktop-vw(140px);
+  font-weight: 700;
+}

@@ -3,6 +3,7 @@ import { ExperienceList } from '@/components/experience';
 import { MyProfile } from '@/components/about';
 import styles from './page.module.scss';
 import classNames from 'classnames/bind';
+import RollingBanner from '@/components/common/RollingBanner/RollingBanner';
 
 const cx = classNames.bind(styles);
 
@@ -14,23 +15,13 @@ export default function Home() {
       </div>
       <div className={cx('content')}>
         <div className={cx('container')}>
-          <section className={cx('key-visual')}>
-            <div className={cx('key-visual_text')}>
-              <p>
-                웹 프론트엔드 개발자 <strong>이유정</strong>
-              </p>
-              <h2>
-                Web <strong>Frontend</strong>
-                <br />
-                Developer
-              </h2>
-            </div>
-          </section>
+          <section className={cx('key-visual')}></section>
           <section className={cx('section')}>
             <div className={cx('profile')}>
               <MyProfile />
             </div>
           </section>
+          <RollingBanner />
           <section className={cx('section')}>
             <h3>Career</h3>
             <div className={cx('career-list')}>
