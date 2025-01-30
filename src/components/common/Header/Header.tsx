@@ -36,7 +36,7 @@ const Header = () => {
               <Link href="#;">Who I Am</Link>
             </li>
             <li className={cx('menu-bar_item')}>
-              <Link href="#;">Experience</Link>
+              <Link href="#experience">Experience</Link>
             </li>
           </ul>
 

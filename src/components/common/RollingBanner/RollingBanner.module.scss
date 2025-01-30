@@ -1,6 +1,7 @@
 @import '@/styles/abstracts/functions';
 
 .rolling {
+  pointer-events: none;
 }
 
 .rolling-inner {
