@@ -10,6 +10,7 @@ interface ExperienceCardProps {
   thumbnailUrl?: string;
   description: string;
   tags: string[];
+  onClick?: () => void;
 }
 
 const ExperienceCard = ({
@@ -18,9 +19,10 @@ const ExperienceCard = ({
   thumbnailUrl,
   description,
   tags,
+  onClick,
 }: ExperienceCardProps) => {
   return (
-    <div className={cx('card')}>
+    <div className={cx('card')} onClick={onClick}>
       <div className={cx('card-inner')}>
         <div className={cx('card-heading')}>
           <div className={cx('title')}>{title}</div>

@@ -1,6 +1,9 @@
+'use client';
+
 import classNames from 'classnames/bind';
 import styles from './ExperienceList.module.scss';
 import ExperienceCard from '../ExperienceCard/ExperienceCard';
+import { useModal } from '@/components/common/Modal/ModalProvider';
 
 const cx = classNames.bind(styles);
 
@@ -51,6 +54,7 @@ const examples = [
 ];
 
 const ExperienceList = () => {
+  const { showModal, hideModal } = useModal();
   return (
     <div className={cx('experience')}>
       <div className={cx('experience-list')}>
@@ -64,6 +68,11 @@ const ExperienceList = () => {
               description={item.description}
               tags={item.tags}
               thumbnailUrl={item.thumbnailUrl}
+              onClick={() => {
+                showModal({
+                  message: 'modal opened.....',
+                });
+              }}
             />
           );
         })}

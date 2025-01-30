@@ -1,0 +1,31 @@
+@import '@/styles/abstracts/functions';
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000030;
+}
+
+.modal-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background: $background-color;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  z-index: 1;
+}
