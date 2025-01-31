@@ -17,21 +17,20 @@ export default function Home() {
       </div>
       <div className={cx('content')}>
         <div className={cx('container')}>
-          <section className={cx('key-visual')}></section>
-          <section className={cx('section')}>
-            <div className={cx('profile')}>
-              <MyProfile />
-            </div>
+          <section className={cx('key-visual')}>
+            <MyProfile />
           </section>
           <RollingBanner />
-          <section className={cx('section')}>
+          <section id="career" className={cx('section')}>
             <h3>Career</h3>
             <div className={cx('career-list')}>
               <div className={cx('career-item')}>
                 <div className={cx('career-head')}>
                   <strong>에이치나인.HNINE</strong>
-                  <span className={cx('date')}>2021.01.11 - 현재</span>
-                  <span className={cx('tag')}>퍼블리싱 및 UI 개발</span>
+                  <div className={cx('desc')}>
+                    <span className={cx('tag')}>퍼블리싱 및 UI 개발</span>
+                    <span className={cx('date')}>2021.01.11 - 현재</span>
+                  </div>
                 </div>
                 <div className={cx('career-content')}>
                   <ul>
@@ -47,19 +46,19 @@ export default function Home() {
                       GSAP, Three.js, SVG 애니메이션을 활용한 인터랙티브 웹 구현, 트렌디한
                       인터랙션 기획 및 최적화 적용
                     </li>
-                    <li>성능 개선을 위한 애니메이션 및 렌더링 최적화</li>
-                    <li>스타일 가이드에 맞춘 디자인 토큰 및 테마 커스터마이징</li>
                     <li>
                       Media Query를 활용한 반응형 UI 개발 및 특정 디바이스 환경(Webview,
                       TV, 크로스 브라우징 등)에 최적화된 UI/UX 대응
                     </li>
+                    <li>성능 개선을 위한 애니메이션 및 렌더링 최적화</li>
+                    <li>스타일 가이드에 맞춘 디자인 토큰 및 테마 커스터마이징</li>
                   </ul>
                 </div>
               </div>
             </div>
           </section>
-          <section className={cx('section')}>
-            <h3 id="experience">Work Experience</h3>
+          <section id="experience" className={cx('section')}>
+            <h3>Work Experience</h3>
             <ExperienceList data={postList} />
           </section>
 

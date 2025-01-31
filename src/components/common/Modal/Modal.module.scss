@@ -1,3 +1,4 @@
+@import '@/styles/abstracts/mixins';
 @import '@/styles/abstracts/functions';
 
 .modal-wrapper {
@@ -5,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 100;
 }
 
@@ -23,8 +24,7 @@
   top: 50%;
   left: 50%;
   width: 800px;
-  min-height: 500px;
-  max-height: 70vh;
+  max-height: 70dvh;
   background: $background-color;
   transform: translate(-50%, -50%);
   border-radius: 24px;
@@ -32,11 +32,10 @@
 }
 
 .modal-header {
-  padding: 24px 24px 0;
+  padding: 24px 24px 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 60px;
+  align-items: flex-start;
 
   strong {
     font-size: 30px;
@@ -47,21 +46,24 @@
     height: 32px;
     background: url('/assets/images/ico/ic-close-bk.svg') center / cover no-repeat;
     border-radius: 8px;
-    &:hover {
-      background-color: $hover-bg-color;
+    @include desktop {
+      &:hover {
+        background-color: $hover-bg-color;
+      }
     }
   }
 }
 
 .modal-content {
-  padding: 0 0 32px;
+  padding: 0 0 24px;
 
   &__inner {
-    padding: 16px 24px 0;
+    padding: 8px 24px 0;
     overflow-y: auto;
-    max-height: calc(70vh - 92px);
-    min-height: 508px;
+    max-height: calc(70dvh - 94px);
+    overflow: auto;
   }
+
   .date {
     display: inline-block;
     margin-right: 12px;
@@ -108,6 +110,7 @@
     p {
       font-size: 18px;
       opacity: 0.8;
+      word-break: break-all;
     }
   }
 
@@ -142,7 +145,6 @@
     position: relative;
     line-height: 1.7em;
     font-size: 18px;
-    // margin: 4px 0;
     &:before {
       content: '';
       position: absolute;
@@ -166,6 +168,62 @@
         width: 7px;
         height: 2px;
         border-radius: 0;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .modal-layer {
+    max-width: calc(100vw - 64px);
+    max-height: 80dvh;
+  }
+  .modal-header {
+    strong {
+      font-size: 24px;
+    }
+  }
+  .modal-content {
+    &__inner {
+      max-height: calc(80dvh - 92px);
+    }
+  }
+}
+
+@include mobile {
+  .modal-layer {
+    max-width: calc(100vw - 40px);
+    border-radius: 12px;
+  }
+  .modal-header {
+    padding: 16px 16px 8px;
+    strong {
+      font-size: 22px;
+    }
+  }
+  .modal-content {
+    padding-bottom: 16px;
+    &__inner {
+      padding: 8px 16px 0;
+    }
+    blockquote {
+      padding: 12px;
+      p {
+        font-size: 16px;
+      }
+    }
+    h2 {
+      font-size: 20px;
+    }
+    ul {
+      padding-left: 16px;
+    }
+    ul li {
+      font-size: 16px;
+      &:before {
+        width: 4px;
+        height: 4px;
+        left: -14px;
       }
     }
   }

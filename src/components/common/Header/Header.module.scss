@@ -1,3 +1,4 @@
+@import '@/styles/abstracts/mixins';
 @import '@/styles/abstracts/variables';
 
 .header {
@@ -16,7 +17,7 @@
     left: 0;
     right: 0;
     width: 100vw;
-    height: 300px;
+    height: 200px;
     pointer-events: none;
     z-index: -1;
     background: linear-gradient(180deg, $background-color, transparent);
@@ -81,11 +82,11 @@
 
   .dropdown {
     position: relative;
-    margin-left: 100px;
+    margin-left: 80px;
     button {
       width: 110px;
       padding: 8px 16px;
-      border-radius: 12px;
+      border-radius: 50px;
       border: 1px solid $text-color;
       span {
         font-size: 16px;
@@ -137,6 +138,42 @@
           background: $hover-bg-color;
         }
       }
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    padding: 24px;
+    &:before {
+      height: 150px;
+    }
+  }
+  .header-inner {
+    align-items: center;
+  }
+  .header-emblem {
+    display: none;
+  }
+  .header-bl {
+    .desc {
+      display: none;
+    }
+  }
+  .menu-bar {
+    .dropdown {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    padding: 8px 24px;
+
+    &:before {
+      height: 100%;
+      background: $background-color;
     }
   }
 }

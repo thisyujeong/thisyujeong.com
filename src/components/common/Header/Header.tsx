@@ -33,7 +33,7 @@ const Header = () => {
         <div className={cx('menu-bar')}>
           <ul className={cx('menu-bar_list')}>
             <li className={cx('menu-bar_item')}>
-              <Link href="#;">Who I Am</Link>
+              <Link href="#career">Career</Link>
             </li>
             <li className={cx('menu-bar_item')}>
               <Link href="#experience">Experience</Link>

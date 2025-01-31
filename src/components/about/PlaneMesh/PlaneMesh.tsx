@@ -43,11 +43,12 @@ const PlaneMesh = () => {
   useEffect(() => {
     const handleResize = () => {
       if (plane.current) {
-        if (window.innerWidth < 768) {
-          plane.current.scale.set(scale[0] * 1.5, scale[1] * 1.5, 1);
-        } else {
-          plane.current.scale.set(scale[0], scale[1], 1);
-        }
+        plane.current.scale.set(scale[0], scale[1], 1);
+        // if (window.innerWidth < 768) {
+        //   plane.current.scale.set(scale[0] * 0.8, scale[1] * 0.8, 1);
+        // } else {
+        //   plane.current.scale.set(scale[0], scale[1], 1);
+        // }
       }
     };
 

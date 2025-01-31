@@ -1,4 +1,6 @@
+@import '@/styles/abstracts/mixins';
 @import '@/styles/abstracts/functions';
+
 .card {
   position: relative;
   padding: 32px 0;
@@ -15,26 +17,30 @@
     height: 100%;
     display: none;
   }
-  &:hover {
-    color: $basic-white;
-    &:before {
-      display: block;
+
+  @include desktop {
+    &:nth-child(3n) .card-inner {
+      border: 0;
     }
-    .card-inner {
-      background-image: url('/assets/images/ico/ic-plus-wh.svg');
+    &:nth-child(3n + 1):nth-last-child(-n + 3) {
+      border: 0;
     }
-  }
-  &:nth-child(3n) .card-inner {
-    border: 0;
-  }
-  &:nth-child(3n + 1):nth-last-child(-n + 3) {
-    border: 0;
-  }
-  &:nth-child(3n + 2):nth-last-child(-n + 2) {
-    border: 0;
-  }
-  &:nth-child(3n + 3):nth-last-child(-n + 1) {
-    border: 0;
+    &:nth-child(3n + 2):nth-last-child(-n + 2) {
+      border: 0;
+    }
+    &:nth-child(3n + 3):nth-last-child(-n + 1) {
+      border: 0;
+    }
+
+    &:hover {
+      color: $basic-white;
+      &:before {
+        display: block;
+      }
+      .card-inner {
+        background-image: url('/assets/images/ico/ic-plus-wh.svg');
+      }
+    }
   }
 }
 
@@ -55,8 +61,8 @@
 .card-heading {
   .title {
     padding-right: 32px;
-    min-height: calc(34px * 1.2 * 2);
-    font-size: 34px;
+    min-height: clamp(48px, calc(desktop-vw(34px) * 1.2 * 2), 82px);
+    font-size: clamp(20px, desktop-vw(34px), 34px);
     font-family: var(--font-safiro);
     line-height: 1.2;
     white-space: pre-wrap;
@@ -64,7 +70,7 @@
 
   .desc {
     margin-top: 8px;
-    font-size: 20px;
+    font-size: clamp(18px, desktop-vw(20px), 20px);
     line-height: 1.4;
     opacity: 0.8;
   }
@@ -84,13 +90,11 @@
     border: 1px solid rgba($primary-color, 0.4);
     background-color: rgba($primary-color, 0.07);
     color: rgba($primary-color, 0.8);
-
     white-space: nowrap;
   }
 }
 
 .card-content {
-  padding-top: desktop-vw(24px);
   .thumbnail {
     position: relative;
     overflow: hidden;
@@ -121,6 +125,49 @@
     }
     img {
       object-fit: cover;
+    }
+  }
+}
+
+@include tablet {
+  .card {
+    padding: 24px 0;
+    &:nth-child(2n) .card-inner {
+      border: 0;
+    }
+    &:nth-child(2n + 1):nth-last-child(-n + 2) {
+      border: 0;
+    }
+    &:nth-child(2n + 2):nth-last-child(-n + 1) {
+      border: 0;
+    }
+  }
+  .card-inner {
+    background-size: 32px;
+    background-position: calc(100% - 24px) -4px;
+  }
+
+  .card-heading {
+    .title {
+      font-size: 24px;
+      min-height: auto;
+    }
+  }
+}
+
+@include mobile {
+  .card {
+    padding: 12px 0;
+  }
+  .card-inner {
+    padding: 0 8px;
+    background-position: right -4px;
+    border: 0;
+  }
+
+  .card-content {
+    .thumbnail {
+      display: none;
     }
   }
 }
