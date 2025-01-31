@@ -15,16 +15,21 @@ const ExperienceList = ({ data }: ExperienceListProps) => {
   const { showModal, hideModal } = useModal();
 
   const handleClick = async (id: string) => {
-    const data = await fetch('/api/experiences', {
+    const { contentHtml, frontmatter } = await fetch('/api/experiences', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id }),
     }).then((res) => res.json());
 
-    console.log(data);
+    console.log(frontmatter);
     showModal({
-      title: data.frontmatter.title,
-      contentHTML: data.contentHtml,
+      title: frontmatter.title,
+      startDate: frontmatter.startDate,
+      endDate: frontmatter.endDate,
+      tags: frontmatter.tags,
+      type: frontmatter.type,
+      thumbnailUrl: frontmatter.thumbnailUrl,
+      contentHtml,
     });
   };
 

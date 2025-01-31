@@ -13,7 +13,7 @@ tags: [React, Typescript, SCSS, Ant Design]
 
 - Ant Design 기반의 테마 커스텀 작업을 수행하여 디자인 가이드에 맞춘 UI를 구현
 - Ant Design 디자인 토큰을 디자이너와 개발자의 시각에서 분석하고, 이를 기반으로 디자이너와의 **커뮤니케이션을 주도**
-  - https://thisyujeong.dev/blog/antd-customize-theme
+  - 블로그 글: [https://thisyujeong.dev/blog/antd-customize-theme](https://thisyujeong.dev/blog/antd-customize-theme)
 - 디자인 토큰 및 변수를 정의하여 컴포넌트를 커스터마이징, 공용 UI 컴포넌트 개발 전반을 담당
 - 레이아웃 및 인터랙션(키프레임 기반) 전반을 설계 및 구현하고 **사용자 경험을 최적화**
   - 애니메이션 성능 최적화를 위해 다양한 구현 방식과 CSS 속성들의 성능을 비교 분석

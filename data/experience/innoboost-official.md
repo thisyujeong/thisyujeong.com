@@ -9,7 +9,7 @@ thumbnailUrl: '/assets/images/thumbnail-innoboost.png'
 ---
 
 > 제약 바이오 기업을 대상으로 토탈 솔루션 및 컨설팅 서비스를 제공하는 전문 에이전시 홈페이지입니다.  
-> **Deploy**: https://www.innoboost.co.kr
+> [https://www.innoboost.co.kr](https://www.innoboost.co.kr)
 
 ## 기여한 부분
 

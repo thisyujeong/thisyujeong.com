@@ -76,11 +76,15 @@
   gap: 8px;
   flex-wrap: wrap;
   .tag-item {
-    padding: 4px 4px;
-    font-size: 16px;
-    border-radius: 99px;
-    color: $primary-color;
-    // border: 1px solid $primary-color;
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: monospace;
+    border: 1px solid rgba($primary-color, 0.4);
+    background-color: rgba($primary-color, 0.07);
+    color: rgba($primary-color, 0.8);
+
     white-space: nowrap;
   }
 }
