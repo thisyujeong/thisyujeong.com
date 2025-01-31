@@ -3,20 +3,48 @@
 @import './abstracts/mixins';
 @import './abstracts/functions';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  color: $text-color;
+  font-size: 20px;
+  background-color: $background-color;
+  overflow-x: hidden;
+
+  &.scroll-lock {
+    overflow: hidden;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+@include tablet {
+  .container {
+    padding: 0 32px;
+  }
+}
+@include mobile {
+  .container {
+    padding: 0 20px;
   }
 }

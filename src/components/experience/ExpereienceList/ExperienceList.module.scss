@@ -1,0 +1,25 @@
+@import '@/styles/abstracts/mixins';
+@import '@/styles/abstracts/functions';
+
+.experience {
+  border-top: 3px solid $basic-black;
+  border-bottom: 3px solid $basic-black;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+@include tablet {
+  .experience-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include mobile {
+  .experience-list {
+    grid-template-columns: 1fr;
+  }
+}

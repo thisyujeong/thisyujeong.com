@@ -1,0 +1,11 @@
+@import './variables';
+
+@function desktop-vw($val, $base: $container-width) {
+  @return calc($val / $base) * 100vw;
+}
+@function tablet-vw($val, $base: $breakpoint-tablet) {
+  @return calc($val / $base) * 100vw;
+}
+@function mobile-vw($val, $base: $breakpoint-mobile) {
+  @return calc($val / $base) * 100vw;
+}

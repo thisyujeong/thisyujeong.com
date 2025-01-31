@@ -1,0 +1,230 @@
+@import '@/styles/abstracts/mixins';
+@import '@/styles/abstracts/functions';
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: 100;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000030;
+}
+
+.modal-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  max-height: 70dvh;
+  background: $background-color;
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.modal-header {
+  padding: 24px 24px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  strong {
+    font-size: 30px;
+  }
+
+  button {
+    width: 32px;
+    height: 32px;
+    background: url('/assets/images/ico/ic-close-bk.svg') center / cover no-repeat;
+    border-radius: 8px;
+    @include desktop {
+      &:hover {
+        background-color: $hover-bg-color;
+      }
+    }
+  }
+}
+
+.modal-content {
+  padding: 0 0 24px;
+
+  &__inner {
+    padding: 8px 24px 0;
+    overflow-y: auto;
+    max-height: calc(70dvh - 94px);
+    overflow: auto;
+  }
+
+  .date {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 18px;
+    font-family: var(--font-safiro);
+    opacity: 0.7;
+  }
+  .type {
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: 500;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+    span {
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 14px;
+      border-radius: 4px;
+      font-family: monospace;
+      border: 1px solid rgba($primary-color, 0.4);
+      background-color: rgba($primary-color, 0.07);
+      color: rgba($primary-color, 0.8);
+    }
+  }
+  .thumbnail {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 54%;
+    margin: 12px 0;
+    img {
+      object-fit: cover;
+    }
+  }
+  /* markdown viewer */
+  blockquote {
+    margin: 12px 0;
+    padding: 16px;
+    background-color: $hover-bg-color;
+    border-left: 4px solid $primary-color;
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+      word-break: break-all;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+
+  code {
+    padding: 0.1em 0.2em;
+    margin: 0 0.2em;
+    color: rgba($basic-black, 0.8);
+    font-size: 0.8em;
+    font-family: monospace;
+    border-radius: 4px;
+    border: 1px solid rgba($basic-black, 0.1);
+    background: rgba($basic-black, 0.08);
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+    line-height: 1.5;
+    opacity: 0.7;
+  }
+  ul {
+    padding-left: 24px;
+  }
+
+  ul li {
+    position: relative;
+    line-height: 1.7em;
+    font-size: 18px;
+    &:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: -15px;
+      top: calc(1.7em / 2 - 3px);
+      width: 6px;
+      height: 6px;
+      background: $basic-black;
+      border-radius: 10px;
+      box-sizing: border-box;
+      opacity: 0.4;
+    }
+
+    > ul {
+      margin-bottom: 8px;
+    }
+    > ul li {
+      &:before {
+        top: calc(1.7em / 2 - 1px);
+        width: 7px;
+        height: 2px;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .modal-layer {
+    max-width: calc(100vw - 64px);
+    max-height: 80dvh;
+  }
+  .modal-header {
+    strong {
+      font-size: 24px;
+    }
+  }
+  .modal-content {
+    &__inner {
+      max-height: calc(80dvh - 92px);
+    }
+  }
+}
+
+@include mobile {
+  .modal-layer {
+    max-width: calc(100vw - 40px);
+    border-radius: 12px;
+  }
+  .modal-header {
+    padding: 16px 16px 8px;
+    strong {
+      font-size: 22px;
+    }
+  }
+  .modal-content {
+    padding-bottom: 16px;
+    &__inner {
+      padding: 8px 16px 0;
+    }
+    blockquote {
+      padding: 12px;
+      p {
+        font-size: 16px;
+      }
+    }
+    h2 {
+      font-size: 20px;
+    }
+    ul {
+      padding-left: 16px;
+    }
+    ul li {
+      font-size: 16px;
+      &:before {
+        width: 4px;
+        height: 4px;
+        left: -14px;
+      }
+    }
+  }
+}
