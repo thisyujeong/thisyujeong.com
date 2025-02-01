@@ -1,0 +1,33 @@
+@import '@/styles/abstracts/mixins';
+@import '@/styles/abstracts/functions';
+
+.title {
+  overflow: hidden;
+  text-transform: capitalize;
+  font-family: var(--font-safiro);
+  font-size: clamp(50px, desktop-vw(70px), 70px);
+  font-weight: 400;
+  padding-bottom: 16px;
+  span {
+    display: inline-block;
+    font: inherit;
+    transform-origin: left bottom;
+    opacity: 0;
+  }
+}
+
+@include tablet {
+  .title {
+    padding-bottom: tablet-vw(12px);
+    span {
+      font-size: tablet-vw(40px);
+    }
+  }
+}
+@include mobile {
+  .title {
+    span {
+      font-size: 32px;
+    }
+  }
+}

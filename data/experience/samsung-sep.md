@@ -1,6 +1,6 @@
 ---
 title: 삼성전자 Samsung Experience Plus
-description: Samsung Experience Plus는 삼성전자의 다양한 제품과 콘텐츠를 탐색할 수 있는 TV App
+description: Samsung Experience Plus는 삼성전자의 다양한 제품과 콘텐츠를 탐색할 수 있는 TV Web App 서비스 입니다.
 startDate: 2022.06
 endDate: 2023.03
 type: TV Web App

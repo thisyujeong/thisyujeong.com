@@ -1,6 +1,6 @@
 ---
 title: 삼성전자 삼성닷컴 프로토타입
-description: 삼성전자의 삼성닷컴 홈페이지 UI / UX 개선 관련 프로토타입
+description: 삼성전자의 삼성닷컴 홈페이지 UI / UX 개선 관련 프로토타입 페이지를 작업했습니다.
 startDate: 2024.08
 endDate: 2024.12
 type: 반응형 웹

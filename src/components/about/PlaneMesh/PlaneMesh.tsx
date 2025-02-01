@@ -27,7 +27,7 @@ const PlaneMesh = () => {
 
   useGSAP(() => {
     if (plane.current) {
-      plane.current.rotateZ((Math.PI / 180) * 10);
+      plane.current.rotateZ((Math.PI / 180) * 5);
     }
   });
 

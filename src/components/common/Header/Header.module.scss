@@ -8,29 +8,6 @@
   right: 0;
   z-index: 100;
   padding: 32px 40px;
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 200px;
-    pointer-events: none;
-    z-index: -1;
-    background: linear-gradient(180deg, $background-color, transparent);
-  }
-}
-
-.header-emblem {
-  position: absolute;
-  left: 50%;
-  top: 40px;
-  height: 30px;
-  font-size: 60px;
-  line-height: 0.8;
 }
 
 .header-inner {
@@ -44,15 +21,35 @@
   align-items: flex-start;
 
   .logo a {
+    display: flex;
+    align-items: center;
     font-size: 36px;
     font-family: var(--font-safiro);
+
+    .str + .str {
+      padding-left: 0;
+      padding-right: 30px;
+      transition: 0.3s ease-in-out;
+    }
+
+    @include desktop {
+      .str + .str {
+        padding-left: 30px;
+        padding-right: 0;
+        transition: 0.3s ease-in-out;
+      }
+      &:hover .str + .str {
+        padding-left: 0;
+        padding-right: 30px;
+      }
+    }
   }
 
   .desc {
     padding-top: 8px;
     font-size: 20px;
     font-weight: 300;
-    margin-left: 110px;
+    margin-left: 200px;
     line-height: 1.4;
     font-family: var(--font-safiro);
   }
@@ -71,73 +68,8 @@
       font-family: var(--font-safiro);
       text-transform: uppercase;
     }
-    & + &:before {
-      content: '/';
-      position: relative;
-      display: inline-block;
-      margin: 0 16px;
-      opacity: 0.7;
-    }
-  }
-
-  .dropdown {
-    position: relative;
-    margin-left: 80px;
-    button {
-      width: 110px;
-      padding: 8px 16px;
-      border-radius: 50px;
-      border: 1px solid $text-color;
-      span {
-        font-size: 16px;
-        font-family: var(--font-safiro);
-        text-transform: uppercase;
-        padding-right: 20px;
-        background-image: url('/assets/images/ico/ic-arrow-up-right_bk.svg');
-        background-position: right center;
-        background-size: 16px;
-        background-repeat: no-repeat;
-      }
-    }
-
-    &:hover {
-      button {
-        background: $hover-bg-color;
-      }
-      .dropdown_popover {
-        display: block;
-      }
-    }
-
-    &_popover {
-      display: none;
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      padding-top: 8px;
-
-      &-inner {
-        padding: 8px 0;
-        border: 1px solid $text-color;
-        border-radius: 12px;
-        background-color: $background-color;
-      }
-
-      ul li {
-        text-align: center;
-        a {
-          display: block;
-          padding: 8px 16px;
-          color: black;
-          font-size: 16px;
-          text-transform: uppercase;
-          font-family: var(--font-safiro);
-        }
-
-        &:hover a {
-          background: $hover-bg-color;
-        }
-      }
+    & + & {
+      margin-left: 50px;
     }
   }
 }
@@ -152,16 +84,8 @@
   .header-inner {
     align-items: center;
   }
-  .header-emblem {
-    display: none;
-  }
   .header-bl {
     .desc {
-      display: none;
-    }
-  }
-  .menu-bar {
-    .dropdown {
       display: none;
     }
   }
@@ -170,10 +94,5 @@
 @include mobile {
   .header {
     padding: 8px 24px;
-
-    &:before {
-      height: 100%;
-      background: $background-color;
-    }
   }
 }

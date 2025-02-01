@@ -3,7 +3,7 @@
 
 .profile-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 36% 1fr;
   align-items: center;
 }
 
@@ -47,26 +47,89 @@
   }
 }
 
-@include tablet {
-  .profile-box {
-    grid-template-columns: 40% 1fr;
+.actions {
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+
+  .button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: $basic-black;
+    line-height: 0;
+    overflow: hidden;
+
+    .btn-inner {
+      display: inline-block;
+      overflow: hidden;
+      padding-right: 20px;
+      background-image: url('/assets/images/ico/ic-arrow-up-right_wh.svg');
+      background-size: 16px;
+      background-position: right center;
+      background-repeat: no-repeat;
+    }
+    .btn-value {
+      position: relative;
+      display: inline-block;
+      color: $basic-white;
+      font-size: 18px;
+      font-family: var(--font-safiro);
+      line-height: 1.2;
+      text-transform: capitalize;
+      &:after {
+        font: inherit;
+        left: 0;
+        position: absolute;
+        top: 100%;
+      }
+    }
+
+    &.primary {
+      background-color: $primary-color;
+    }
+
+    &:hover {
+      .btn-value {
+        transform: translateY(-100%);
+        transition: 0.2s ease;
+      }
+    }
+    &.notion .btn-value:after {
+      content: 'notion';
+    }
+    &.github .btn-value:after {
+      content: 'github';
+    }
   }
+}
+
+@include tablet {
   .profile-text {
     h4 {
-      font-size: tablet-vw(28px);
+      font-size: tablet-vw(22px);
       margin-bottom: 12px;
     }
     .description {
       margin-top: 12px;
-      font-size: 18px;
+      font-size: 16px;
       word-break: break-all;
     }
+  }
+
+  .actions a {
+    font-size: 16px;
   }
 }
 
 @include mobile {
   .profile-box {
     grid-template-columns: 1fr;
+  }
+  .profile-canvas {
+    width: 80%;
+    margin: 0 auto;
   }
   .profile-text {
     margin-top: 24px;

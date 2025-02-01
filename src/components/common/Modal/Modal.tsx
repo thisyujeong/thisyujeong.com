@@ -49,7 +49,7 @@ const Modal = ({
               </div>
               {thumbnailUrl && (
                 <div className={cx('thumbnail')}>
-                  <Image src={thumbnailUrl} alt={title} fill priority />
+                  <Image src={thumbnailUrl} alt={title} fill priority sizes="800px" />
                 </div>
               )}
               {contentHtml && <div dangerouslySetInnerHTML={{ __html: contentHtml }} />}
