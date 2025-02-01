@@ -1,6 +1,6 @@
 ---
 title: 삼성전자 SPACE UX 통합 개발
-description: 사내 분리된 5개의 서비스를 하나의 플랫폼으로 통합하여 통일된 UI/UX를 기반으로 신규 플랫폼 구축
+description: 사내 분리된 5개의 서비스를 하나의 플랫폼으로 통합하여 통일된 UI/UX를 기반으로 신규 플랫폼을 구축하였습니다.
 startDate: 2024.01
 endDate: 2024.07
 type: PC 웹

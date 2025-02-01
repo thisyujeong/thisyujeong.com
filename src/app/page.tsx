@@ -5,7 +5,7 @@ import {
   RollingBanner,
   Title,
 } from '@/components/common';
-import { ExperienceList } from '@/components/experience';
+import { ExperienceWrapper } from '@/components/experience';
 import { MyProfile } from '@/components/about';
 import { CareerList } from '@/components/career';
 import styles from './page.module.scss';
@@ -32,13 +32,17 @@ export default async function Home() {
               <CareerList />
             </div>
           </section>
-          <section id="experience" className={cx('section')}>
+        </div>
+
+        <section className={cx('section')}>
+          <ExperienceWrapper postList={postList} />
+        </section>
+        <div className={cx('container')}>
+          {/* <section id="experience" className={cx('section')}>
             <Title>Work Experience</Title>
             <ExperienceList data={postList} />
-          </section>
-
+          </section> */}
           <RollingBanner />
-
           <section className={cx('section', 'history')}>
             <div className={cx('education')}>
               <Title>Education</Title>

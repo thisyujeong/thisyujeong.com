@@ -41,12 +41,17 @@
     font-family: var(--font-safiro);
 
     .str + .str {
-      padding-left: 30px;
-      padding-right: 0;
+      padding-left: 0;
+      padding-right: 30px;
       transition: 0.3s ease-in-out;
     }
 
     @include desktop {
+      .str + .str {
+        padding-left: 30px;
+        padding-right: 0;
+        transition: 0.3s ease-in-out;
+      }
       &:hover .str + .str {
         padding-left: 0;
         padding-right: 30px;

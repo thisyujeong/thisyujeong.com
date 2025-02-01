@@ -1,6 +1,6 @@
 ---
 title: SK하이닉스 Signal Design System 고도화
-description: 기존 SK 하이닉스 내부 디자인 시스템을 유지보수 및 추가 개발하는 고도화 작업
+description: 기존 SK 하이닉스 내부 디자인 시스템을 유지보수 및 추가 개발하는 고도화 작업에 참여했습니다.
 startDate: 2021.06
 endDate: 2022.02
 type: 적응형 웹

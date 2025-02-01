@@ -18,13 +18,15 @@
 
 @include tablet {
   .title {
-    font-size: tablet-vw(40px);
     padding-bottom: tablet-vw(12px);
+    span {
+      font-size: tablet-vw(40px);
+    }
   }
 }
 @include mobile {
   .title {
-    h3 {
+    span {
       font-size: 32px;
     }
   }
