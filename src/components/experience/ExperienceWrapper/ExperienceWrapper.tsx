@@ -90,7 +90,7 @@ const ExperienceWrapper = ({ postList }: ExperienceWrapperProps) => {
                   key={post.id}
                   className={cx('card')}
                   ref={(el) => {
-                    el && cardsRef.current.push(el);
+                    if (el) cardsRef.current.push(el);
                   }}
                   onClick={() => handleClick(post.id)}
                 >
