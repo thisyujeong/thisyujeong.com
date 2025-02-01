@@ -23,7 +23,7 @@
 }
 
 .section {
-  padding: clamp(60px, desktop-vw(120px), 120px) 0;
+  padding: clamp(60px, desktop-vw(80px), 80px) 0;
 
   h3 {
     text-transform: capitalize;
@@ -36,6 +36,34 @@
 
 .key-visual {
   padding: 40px 0;
+
+  .actions {
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    a {
+      display: inline-block;
+      padding: 8px 16px;
+      color: $basic-white;
+      font-size: 18px;
+      font-family: var(--font-safiro);
+      border-radius: 4px;
+      background-color: $basic-black;
+
+      span {
+        font: inherit;
+        padding-right: 20px;
+        background-image: url('/assets/images/ico/ic-arrow-up-right_wh.svg');
+        background-size: 16px;
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+    }
+    a.primary {
+      background-color: $primary-color;
+    }
+  }
 }
 
 .career {
@@ -146,6 +174,12 @@
     }
   }
 
+  .key-visual {
+    .actions a {
+      font-size: 16px;
+    }
+  }
+
   .career {
     &-item {
       gap: tablet-vw(30px);
@@ -186,6 +220,11 @@
 
   .key-visual {
     padding-top: 0;
+
+    .actions {
+      justify-content: flex-start;
+      gap: 8px;
+    }
   }
 
   .career {

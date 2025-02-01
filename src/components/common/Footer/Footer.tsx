@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
+import metadata from 'data/metadata';
 
 const cx = classNames.bind(styles);
 
@@ -19,7 +20,10 @@ const Footer = () => {
           </button>
         </div>
         <div className={cx('copyright')}>
-          <p>© thisyujeong 2025, All Rights Reserved.</p>
+          <p>
+            {`©${metadata.user.nickname} ${new Date().getFullYear()}, All Rights
+            Reserved.`}
+          </p>
         </div>
       </div>
     </footer>

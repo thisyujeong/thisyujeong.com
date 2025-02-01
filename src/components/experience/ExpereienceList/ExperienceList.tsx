@@ -14,7 +14,7 @@ interface ExperienceListProps {
   data: ExperienceType[];
 }
 const ExperienceList = ({ data }: ExperienceListProps) => {
-  const { showModal, hideModal } = useModal();
+  const { showModal } = useModal();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleClick = async (id: string) => {

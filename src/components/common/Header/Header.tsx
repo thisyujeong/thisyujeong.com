@@ -3,13 +3,9 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import Link from 'next/link';
+import metadata from 'data/metadata';
 
 const cx = classNames.bind(styles);
-
-const sites = [
-  { id: 'github', label: 'github', path: 'https://github.com/thisyujeong' },
-  { id: 'blog', label: 'blog', path: 'https://thisyujeong.dev' },
-];
 
 const Header = () => {
   return (
@@ -26,7 +22,7 @@ const Header = () => {
           <div className={cx('desc')}>
             Web Frontend Developer
             <br />
-            ©thisyujeong 2025
+            {`©${metadata.user.nickname} ${new Date().getFullYear()}`}
           </div>
         </div>
 
@@ -39,25 +35,6 @@ const Header = () => {
               <Link href="#experience">Experience</Link>
             </li>
           </ul>
-
-          <div className={cx('dropdown')}>
-            <button>
-              <span>visit</span>
-            </button>
-            <div className={cx('dropdown_popover')}>
-              <div className={cx('dropdown_popover-inner')}>
-                <ul>
-                  {sites.map(({ id, label, path }) => (
-                    <li key={id}>
-                      <Link href={path} target="_blank">
-                        {label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </header>

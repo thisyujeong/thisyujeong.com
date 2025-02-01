@@ -1,9 +1,11 @@
-import { BackgroundCanvas, LoadingSpinner, RollingBanner } from '@/components/common';
+import { BackgroundCanvas, RollingBanner } from '@/components/common';
 import { ExperienceList } from '@/components/experience';
 import { MyProfile } from '@/components/about';
 import styles from './page.module.scss';
 import classNames from 'classnames/bind';
 import { getSortedPostsData } from '@/service/experiences';
+import metadata from 'data/metadata';
+import Link from 'next/link';
 
 const cx = classNames.bind(styles);
 
@@ -19,6 +21,23 @@ export default function Home() {
         <div className={cx('container')}>
           <section className={cx('key-visual')}>
             <MyProfile />
+            <div className={cx('actions')}>
+              <Link
+                href={metadata.links.notion}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Notion</span>
+              </Link>
+              <a
+                href={metadata.links.blog}
+                className={cx('primary')}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Github</span>
+              </a>
+            </div>
           </section>
           <RollingBanner />
           <section id="career" className={cx('section')}>
