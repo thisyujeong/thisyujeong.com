@@ -24,98 +24,10 @@
 
 .section {
   padding: clamp(60px, desktop-vw(80px), 80px) 0;
-
-  h3 {
-    text-transform: capitalize;
-    font-family: var(--font-safiro);
-    font-size: clamp(50px, desktop-vw(70px), 70px);
-    font-weight: 400;
-    padding-bottom: 16px;
-  }
 }
 
 .key-visual {
   padding: 40px 0;
-
-  .actions {
-    padding: 20px 0 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-    a {
-      display: inline-block;
-      padding: 8px 16px;
-      color: $basic-white;
-      font-size: 18px;
-      font-family: var(--font-safiro);
-      border-radius: 4px;
-      background-color: $basic-black;
-
-      span {
-        font: inherit;
-        padding-right: 20px;
-        background-image: url('/assets/images/ico/ic-arrow-up-right_wh.svg');
-        background-size: 16px;
-        background-position: right center;
-        background-repeat: no-repeat;
-      }
-    }
-    a.primary {
-      background-color: $primary-color;
-    }
-  }
-}
-
-.career {
-  &-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 60px;
-    padding: 24px;
-  }
-
-  &-head {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 350px;
-    font-family: var(--font-safiro);
-
-    strong {
-      margin: 8px 0;
-      color: $primary-color;
-      font-size: 32px;
-      font-weight: 700;
-      font-family: var(--font-safiro);
-    }
-
-    .desc {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .tag,
-    .date {
-      position: relative;
-      font-size: 18px;
-      line-height: 1.4;
-      opacity: 0.7;
-    }
-  }
-
-  &-content {
-    ul {
-      padding-left: 24px;
-    }
-    ul li {
-      margin: 8px 0;
-      font-size: 20px;
-      list-style: disc;
-      line-height: 1.4;
-      word-break: break-all;
-    }
-  }
 }
 
 .history {
@@ -168,16 +80,6 @@
   }
   .section {
     padding: tablet-vw(60px) 0;
-    h3 {
-      font-size: tablet-vw(40px);
-      padding-bottom: tablet-vw(12px);
-    }
-  }
-
-  .key-visual {
-    .actions a {
-      font-size: 16px;
-    }
   }
 
   .career {
@@ -213,9 +115,6 @@
 @include mobile {
   .section {
     padding: 40px 0;
-    h3 {
-      font-size: 32px;
-    }
   }
 
   .key-visual {
@@ -224,30 +123,6 @@
     .actions {
       justify-content: flex-start;
       gap: 8px;
-    }
-  }
-
-  .career {
-    &-head {
-      strong {
-        font-size: 22px;
-      }
-      .desc {
-        flex-direction: row;
-      }
-      .date:before {
-        content: '';
-        position: relative;
-        display: inline-block;
-        width: 2px;
-        height: 0.8em;
-        margin: 0 12px;
-        background-color: $basic-black;
-      }
-    }
-    &-item {
-      gap: 0;
-      flex-direction: column;
     }
   }
 
