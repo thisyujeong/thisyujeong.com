@@ -10,6 +10,7 @@ import { MyProfile } from '@/components/about';
 import { CareerList } from '@/components/career';
 import styles from './page.module.scss';
 import classNames from 'classnames/bind';
+import Image from 'next/image';
 
 const cx = classNames.bind(styles);
 
@@ -22,6 +23,17 @@ export default async function Home() {
         <BackgroundCanvas />
       </div>
       <div className={cx('content')}>
+        <div className={cx('splash')}>
+          <div className={cx('splash-img')}>
+            <Image
+              src="/assets/images/kv-splash.webp"
+              fill
+              sizes="100vw"
+              priority
+              alt=""
+            />
+          </div>
+        </div>
         <div className={cx('container')}>
           <section className={cx('key-visual')}>
             <MyProfile />

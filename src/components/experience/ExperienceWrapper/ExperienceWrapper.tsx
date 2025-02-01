@@ -44,15 +44,14 @@ const ExperienceWrapper = ({ postList }: ExperienceWrapperProps) => {
       },
     });
 
-    gsap.to(cardsRef.current, { scale: 0.8 });
+    gsap.to(cardsRef.current, { scale: 0.85 });
     gsap.to(cardsRef.current, {
       scale: 1,
       ease: 'ease.out',
       stagger: 0.1,
       scrollTrigger: {
         trigger: wrapperRef.current,
-        start: 'top 80%',
-        markers: true,
+        start: 'top 90%',
       },
     });
   });
