@@ -5,7 +5,6 @@ import Image from 'next/image';
 const cx = classNames.bind(styles);
 
 interface ExperienceCardProps {
-  id: string;
   title: string;
   thumbnailUrl?: string;
   description: string;
@@ -14,7 +13,6 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard = ({
-  id,
   title,
   thumbnailUrl,
   description,
@@ -38,7 +36,7 @@ const ExperienceCard = ({
         <div className={cx('card-content')}>
           {thumbnailUrl && (
             <div className={cx('thumbnail')}>
-              <Image src={thumbnailUrl} alt={title} fill sizes="100%" priority />
+              <Image src={thumbnailUrl} alt={title} fill sizes="800px" />
             </div>
           )}
         </div>

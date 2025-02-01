@@ -1,4 +1,4 @@
-import { BackgroundCanvas, RollingBanner } from '@/components/common';
+import { BackgroundCanvas, LoadingSpinner, RollingBanner } from '@/components/common';
 import { ExperienceList } from '@/components/experience';
 import { MyProfile } from '@/components/about';
 import styles from './page.module.scss';
