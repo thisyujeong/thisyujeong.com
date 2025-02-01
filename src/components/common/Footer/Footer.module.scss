@@ -5,9 +5,9 @@
   position: relative;
   text-align: center;
   padding: 40px 32px;
+  background-color: $basic-black;
 
   > div {
-    background-color: $basic-black;
     border-radius: 40px;
     padding: 100px 0 120px;
     color: $basic-white;
@@ -61,7 +61,7 @@
     }
   }
   .copyright {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
