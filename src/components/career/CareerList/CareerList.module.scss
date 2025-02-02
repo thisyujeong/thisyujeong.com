@@ -2,93 +2,146 @@
 @import '@/styles/abstracts/functions';
 
 .career {
+  margin-top: 40px;
+}
+.card {
   position: relative;
-}
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: 85%;
+  margin: 0 auto;
+  gap: 24px;
 
-.career-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 60px;
-  padding: 24px;
-}
-
-.career-head {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 350px;
-  font-family: var(--font-safiro);
-
-  strong {
-    margin: 8px 0;
-    color: $primary-color;
-    font-size: 32px;
-    font-weight: 700;
-  }
-
-  .desc {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tag,
-  .date {
+  &__period {
     position: relative;
-    font-size: 18px;
-    line-height: 1.4;
-    opacity: 0.7;
-  }
-}
+    text-align: right;
 
-.career-content {
-  ul {
-    padding-left: 24px;
-  }
-  ul li {
-    margin: 8px 0;
-    font-size: 20px;
-    list-style: disc;
-    line-height: 1.4;
-    word-break: break-all;
-  }
-}
+    span {
+      position: relative;
+      display: inline-block;
+      color: $primary-color;
+      font-size: 18px;
+      font-family: var(--font-safiro);
+      padding-right: 16px;
+      border-right: 2px solid rgba($basic-black, 0.15);
 
-@include tablet {
-  .career-item {
-    gap: tablet-vw(30px);
-    padding: 0;
-  }
-  .career-head {
-    strong {
-      font-size: tablet-vw(24px);
+      &:before {
+        content: '';
+        position: absolute;
+        left: -12px;
+        top: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: $primary-color;
+        border-radius: 50%;
+      }
     }
   }
-  .career-content ul li {
-    font-size: 18px;
+
+  &__head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    .company {
+      display: flex;
+      flex-direction: column;
+      strong {
+        font-size: 32px;
+      }
+      span {
+        margin-top: 8px;
+        font-size: 16px;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .summary {
+      font-size: 18px;
+      line-height: 1.5;
+      border-radius: 12px;
+      background: rgba($basic-black, 0.07);
+      border: 1px solid #dce2e0;
+      padding: 16px;
+    }
+
+    .detail {
+      border-radius: 12px;
+      background: rgba($basic-black, 0.07);
+      border: 1px solid #dce2e0;
+      padding: 16px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+
+    ul li {
+      position: relative;
+      line-height: 1.7em;
+      font-size: 18px;
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        left: -15px;
+        top: calc(1.7em / 2 - 3px);
+        width: 6px;
+        height: 6px;
+        background: $basic-black;
+        border-radius: 10px;
+        box-sizing: border-box;
+        opacity: 0.4;
+      }
+
+      > ul {
+        margin-bottom: 8px;
+      }
+      > ul li {
+        &:before {
+          top: calc(1.7em / 2 - 1px);
+          width: 7px;
+          height: 2px;
+          border-radius: 0;
+        }
+      }
+    }
   }
 }
 
 @include mobile {
-  .career-head {
-    strong {
-      font-size: 22px;
-    }
-    .desc {
-      flex-direction: row;
-    }
-    .date:before {
-      content: '';
-      position: relative;
-      display: inline-block;
-      width: 2px;
-      height: 0.8em;
-      margin: 0 12px;
-      background-color: $basic-black;
-    }
+  .career {
+    margin-top: 20px;
   }
-  .career-item {
-    gap: 0;
+  .card {
+    display: flex;
     flex-direction: column;
+    max-width: 100%;
+    gap: 8px;
+
+    &__period {
+      text-align: left;
+      span {
+        border: 0;
+        padding-right: 0;
+        margin-left: 16px;
+      }
+    }
+
+    &__content {
+      .summary {
+        padding: 12px;
+      }
+      .detail {
+        padding: 12px 12px 12px 8px;
+      }
+    }
   }
 }

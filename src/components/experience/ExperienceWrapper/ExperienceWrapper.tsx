@@ -110,9 +110,9 @@ const ExperienceWrapper = ({ postList }: ExperienceWrapperProps) => {
                   <div className={cx('card-content')}>
                     <strong>{post.title}</strong>
                     <p>{post.description}</p>
-                    <div
-                      className={cx('date')}
-                    >{`${post.startDate} - ${post.endDate}`}</div>
+                    <div className={cx('date')}>
+                      {`${post.startDate} - ${post.endDate}`}
+                    </div>
                   </div>
                 </div>
               ))}
