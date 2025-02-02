@@ -42,6 +42,11 @@ const Header = () => {
                 <Link href="#experience">Experience</Link>
               </FadeContainer>
             </li>
+            <li className={cx('menu-bar_item')}>
+              <FadeContainer delay={0.3} offsetY={10}>
+                <Link href="#stacks">Stacks</Link>
+              </FadeContainer>
+            </li>
           </ul>
         </div>
       </div>

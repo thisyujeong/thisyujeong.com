@@ -95,4 +95,16 @@
   .header {
     padding: 8px 24px;
   }
+  .menu-bar {
+    &_item {
+      a {
+        font-size: 16px;
+        font-family: var(--font-safiro);
+        text-transform: uppercase;
+      }
+      & + & {
+        margin-left: 20px;
+      }
+    }
+  }
 }

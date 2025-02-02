@@ -56,7 +56,7 @@ export default async function Home() {
             <ExperienceList data={postList} />
           </section> */}
           <RollingBanner />
-          <section className={cx('section')}>
+          <section id="stacks" className={cx('section')}>
             <Title>Stacks</Title>
             <StackList />
           </section>
