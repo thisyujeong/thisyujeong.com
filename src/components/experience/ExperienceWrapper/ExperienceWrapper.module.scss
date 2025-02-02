@@ -7,7 +7,7 @@
 }
 
 .title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .card-layout {
@@ -74,6 +74,7 @@
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     height: 100%;
 
     strong {
@@ -97,6 +98,7 @@
       opacity: 0.7;
     }
   }
+
   @include desktop {
     &:hover {
       background-color: $primary-color;
@@ -114,17 +116,8 @@
     }
   }
 }
-.drawer-inner {
-  background-color: #fff;
-  width: 500px;
-  height: 60vh;
-}
 
 @include mobile {
-  .title {
-    margin-bottom: 40px;
-  }
-
   .card {
     width: 300px;
     min-height: 450px;

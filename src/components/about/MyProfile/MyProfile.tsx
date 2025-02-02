@@ -63,7 +63,7 @@ const MyProfile = () => {
           </Link>
           <Link
             className={cx('button', 'github', 'primary')}
-            href={metadata.links.blog}
+            href={metadata.links.github}
             target="_blank"
             rel="noopener noreferrer"
           >
