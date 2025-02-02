@@ -8,6 +8,7 @@ import {
 import { ExperienceWrapper } from '@/components/experience';
 import { MyProfile } from '@/components/about';
 import { CareerList } from '@/components/career';
+import { StackList } from '@/components/stack';
 import styles from './page.module.scss';
 import classNames from 'classnames/bind';
 import Image from 'next/image';
@@ -55,6 +56,10 @@ export default async function Home() {
             <ExperienceList data={postList} />
           </section> */}
           <RollingBanner />
+          <section className={cx('section')}>
+            <Title>Stacks</Title>
+            <StackList />
+          </section>
           <section className={cx('section', 'history')}>
             <div className={cx('education')}>
               <Title>Education</Title>

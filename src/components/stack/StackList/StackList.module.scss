@@ -1,0 +1,72 @@
+@import '@/styles/abstracts/mixins';
+@import '@/styles/abstracts/variables';
+@import '@/styles/abstracts/functions';
+
+.stack_tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: var(--font-safiro);
+    border-radius: 50px;
+    background-color: #e1e1e1;
+  }
+}
+
+.stack {
+}
+
+.stack-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.stack-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0;
+  &__head {
+    .title {
+      color: $primary-color;
+      font-size: 20px;
+      font-family: var(--font-safiro);
+    }
+  }
+
+  &__content {
+    ul {
+      padding-left: 24px;
+    }
+
+    ul li {
+      position: relative;
+      line-height: 1.7em;
+      font-size: 18px;
+      word-break: break-all;
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        left: -15px;
+        top: calc(1.7em / 2 - 3px);
+        width: 6px;
+        height: 6px;
+        background: $basic-black;
+        border-radius: 10px;
+        box-sizing: border-box;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .stack-list {
+    grid-template-columns: 1fr;
+  }
+}
