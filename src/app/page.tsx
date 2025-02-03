@@ -1,6 +1,7 @@
 import { getSortedPostsData } from '@/service/experiences';
 import {
   BackgroundCanvas,
+  EmailForm,
   FadeContainer,
   RollingBanner,
   Title,
@@ -113,6 +114,9 @@ export default async function Home() {
                 </div>
               </FadeContainer>
             </div>
+          </section>
+          <section>
+            <EmailForm />
           </section>
         </div>
       </div>
