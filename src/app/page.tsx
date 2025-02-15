@@ -1,6 +1,7 @@
 import { getSortedPostsData } from '@/service/experiences';
 import {
   BackgroundCanvas,
+  EmailForm,
   FadeContainer,
   RollingBanner,
   Title,
@@ -36,25 +37,18 @@ export default async function Home() {
           </div>
         </div>
         <div className={cx('container')}>
-          <section className={cx('key-visual')}>
+          <section className={cx('section', 'profile')}>
             <MyProfile />
           </section>
-          <section className={cx('section')}>
+          <section className={cx('section', 'career')}>
             <Title>Career</Title>
-            <div className={cx('career')}>
-              <CareerList />
-            </div>
+            <CareerList />
           </section>
-        </div>
 
-        <section className={cx('section')}>
-          <ExperienceWrapper postList={postList} />
-        </section>
-        <div className={cx('container')}>
-          {/* <section id="experience" className={cx('section')}>
-            <Title>Work Experience</Title>
-            <ExperienceList data={postList} />
-          </section> */}
+          <section className={cx('section')}>
+            <ExperienceWrapper postList={postList} />
+          </section>
+
           <RollingBanner />
           <section id="stacks" className={cx('section')}>
             <Title>Stacks</Title>
@@ -113,6 +107,10 @@ export default async function Home() {
                 </div>
               </FadeContainer>
             </div>
+          </section>
+          <section className={cx('section', 'contact')}>
+            <Title>Get in touch</Title>
+            <EmailForm />
           </section>
         </div>
       </div>
