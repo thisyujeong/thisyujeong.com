@@ -15,9 +15,9 @@ const Footer = () => {
           </span>
         </div>
         <div className={cx('contact')}>
-          <button>
-            <span>Get in touch</span>
-          </button>
+          <a className={cx('email')} href={`mailto:${metadata.user.email}`}>
+            {metadata.user.email}
+          </a>
         </div>
         <div className={cx('copyright')}>
           <p>

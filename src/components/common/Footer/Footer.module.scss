@@ -25,6 +25,11 @@
 .contact {
   text-align: center;
   margin: 32px 0;
+  .email {
+    color: $basic-white;
+    font-size: desktop-vw(54px);
+    font-family: var(--font-safiro);
+  }
 }
 
 .contact button {
@@ -73,6 +78,16 @@
       padding: 50px 0 70px;
     }
   }
+
+  .contact {
+    margin: 20px 0;
+    .email {
+      color: $basic-white;
+      font-size: mobile-vw(20px);
+      font-family: var(--font-safiro);
+    }
+  }
+
   .copyright {
     font-size: 16px;
   }
