@@ -108,15 +108,11 @@ export default async function Home() {
               </FadeContainer>
             </div>
           </section>
-          <section className={cx('section')}>
+          <section className={cx('section', 'contact')}>
+            <Title>Get in touch</Title>
             <EmailForm />
           </section>
         </div>
-
-        {/* <section id="experience" className={cx('section')}>
-            <Title>Work Experience</Title>
-            <ExperienceList data={postList} />
-          </section> */}
       </div>
     </div>
   );

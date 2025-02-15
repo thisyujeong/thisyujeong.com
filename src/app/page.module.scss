@@ -90,6 +90,13 @@
   }
 }
 
+.section.contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
 @include tablet {
   .splash {
     height: 400px;
@@ -111,6 +118,10 @@
         }
       }
     }
+  }
+  .section.contact {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
