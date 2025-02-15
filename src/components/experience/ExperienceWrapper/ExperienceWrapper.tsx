@@ -79,44 +79,35 @@ const ExperienceWrapper = ({ postList }: ExperienceWrapperProps) => {
   return (
     <>
       <div className={cx('wrapper')} ref={wrapperRef}>
-        <div className={cx('container')}>
-          <div id="experience" className={cx('title')}>
-            <Title>Experience</Title>
-          </div>
-          <div className={cx('card-layout')} ref={layoutRef}>
-            <div className={cx('card-list')} ref={listRef}>
-              {postList.map((post, i) => (
-                <div
-                  key={post.id}
-                  className={cx('card')}
-                  ref={(el) => {
-                    if (el) cardsRef.current.push(el);
-                  }}
-                  onClick={() => handleClick(post.id)}
-                >
-                  <div className={cx('number')}>
-                    {(i + 1).toString().padStart(2, '0')}
-                  </div>
-                  <div className={cx('card-thumbnail')}>
-                    {post.thumbnailUrl && (
-                      <Image
-                        src={post.thumbnailUrl}
-                        alt={post.title}
-                        sizes="800px"
-                        fill
-                      />
-                    )}
-                  </div>
-                  <div className={cx('card-content')}>
-                    <strong>{post.title}</strong>
-                    <p>{post.description}</p>
-                    <div className={cx('date')}>
-                      {`${post.startDate} - ${post.endDate}`}
-                    </div>
+        <div id="experience" className={cx('title')}>
+          <Title>Experience</Title>
+        </div>
+        <div className={cx('card-layout')} ref={layoutRef}>
+          <div className={cx('card-list')} ref={listRef}>
+            {postList.map((post, i) => (
+              <div
+                key={post.id}
+                className={cx('card')}
+                ref={(el) => {
+                  if (el) cardsRef.current.push(el);
+                }}
+                onClick={() => handleClick(post.id)}
+              >
+                <div className={cx('number')}>{(i + 1).toString().padStart(2, '0')}</div>
+                <div className={cx('card-thumbnail')}>
+                  {post.thumbnailUrl && (
+                    <Image src={post.thumbnailUrl} alt={post.title} sizes="800px" fill />
+                  )}
+                </div>
+                <div className={cx('card-content')}>
+                  <strong>{post.title}</strong>
+                  <p>{post.description}</p>
+                  <div className={cx('date')}>
+                    {`${post.startDate} - ${post.endDate}`}
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

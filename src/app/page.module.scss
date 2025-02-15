@@ -42,11 +42,11 @@
 .section {
   padding: clamp(60px, desktop-vw(80px), 80px) 0;
 }
-.key-visual {
+.section.profile {
   padding: 40px 0;
 }
 
-.history {
+.section.history {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -99,22 +99,7 @@
     padding: tablet-vw(60px) 0;
   }
 
-  .career {
-    &-item {
-      gap: tablet-vw(30px);
-      padding: 0;
-    }
-    &-head {
-      strong {
-        font-size: tablet-vw(24px);
-      }
-    }
-    &-content ul li {
-      font-size: 18px;
-    }
-  }
-
-  .history {
+  .section.history {
     .history-list {
       .history-item {
         flex-direction: column;
@@ -138,7 +123,7 @@
     padding: 40px 0;
   }
 
-  .key-visual {
+  .section.profile {
     padding-top: 30px;
 
     .actions {
@@ -147,7 +132,7 @@
     }
   }
 
-  .history {
+  .section.history {
     grid-template-columns: 1fr;
     .history-list {
       .history-item {
