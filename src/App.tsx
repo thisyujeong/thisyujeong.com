@@ -1,15 +1,9 @@
-import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import router from '@/routes';
+import '@/styles/global.scss';
 
 function App() {
-  return (
-    <div>
-      <h1>
-        The Archive
-        <br />
-        2021 - {new Date().getFullYear()}
-      </h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
