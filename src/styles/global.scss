@@ -1,6 +1,5 @@
 @use './default';
 @use './fonts';
-@use './variables' as *;
 
 .sr-only {
   position: absolute;
@@ -13,3 +12,22 @@
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+html {
+  font-family: 'PublicSans';
+  font-size: 100vw / $desktop-screen * 16;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  cursor: none;
+}
+
+// @media screen and (max-width: 1280px) {
+//   html {
+//     font-size: 100vw / 1280 * 16;
+//   }
+// }

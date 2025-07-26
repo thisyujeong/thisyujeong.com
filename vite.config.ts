@@ -10,4 +10,19 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @use "@/styles/function.scss" as *;
+          @use "@/styles/variables.scss" as *;
+        `,
+      },
+    },
+  },
+  server: {
+    proxy: {
+      '/api': 'http://localhost:5174',
+    },
+  },
 });

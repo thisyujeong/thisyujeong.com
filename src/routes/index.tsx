@@ -3,7 +3,7 @@ import { createBrowserRouter, createRoutesFromElements, Route } from 'react-rout
 import { type Paths, routePaths } from './config';
 import HomePage from '@/pages/home/HomePage';
 import ProjectPage from '@/pages/project/ProjectPage';
-import DefaultLayout from '@/components/layout/DefaultLayout';
+import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 
 interface RouterConfig {
   key: string;
