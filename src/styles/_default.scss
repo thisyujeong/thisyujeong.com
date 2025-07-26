@@ -120,6 +120,17 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 ul,
 ol {
   list-style: none;
