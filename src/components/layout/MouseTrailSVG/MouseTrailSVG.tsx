@@ -84,7 +84,6 @@ const MouseTrailSVG = () => {
 
       // hover 감지: pointer 커서가 적용된 요소 위인지 확인
       const el = document.elementFromPoint(x, y) as HTMLElement | null;
-      console.log(el?.tagName);
 
       if (el) {
         const isInteractive =

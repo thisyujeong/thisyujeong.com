@@ -22,12 +22,7 @@ export const NotionPageSchema = z.object({
   archived: z.boolean(),
   in_trash: z.boolean(),
   properties: z.object({
-    start_date: z.object({
-      id: z.string(),
-      type: z.string(),
-      date: z.object({ start: z.string(), end: z.null(), time_zone: z.null() }),
-    }),
-    slug: z.object({
+    Slug: z.object({
       id: z.string(),
       type: z.string(),
       rich_text: z.array(
@@ -47,34 +42,39 @@ export const NotionPageSchema = z.object({
         }),
       ),
     }),
-    stack: z.object({
+    Stack: z.object({
       id: z.string(),
       type: z.string(),
       multi_select: z.array(z.object({ id: z.string(), name: z.string(), color: z.string() })),
     }),
-    class: z.object({
+    Class: z.object({
       id: z.string(),
       type: z.string(),
       select: z.object({ id: z.string(), name: z.string(), color: z.string() }),
     }),
-    link2: z.object({ id: z.string(), type: z.string(), url: z.string().nullable() }),
-    link1: z.object({ id: z.string(), type: z.string(), url: z.string().nullable() }),
-    end_date: z.object({
+    Link2: z.object({ id: z.string(), type: z.string(), url: z.string().nullable() }),
+    Link1: z.object({ id: z.string(), type: z.string(), url: z.string().nullable() }),
+    EndDate: z.object({
       id: z.string(),
       type: z.string(),
       date: z.object({ start: z.string(), end: z.null(), time_zone: z.null() }),
     }),
-    period: z.object({
+    StartDate: z.object({
+      id: z.string(),
+      type: z.string(),
+      date: z.object({ start: z.string(), end: z.null(), time_zone: z.null() }),
+    }),
+    Period: z.object({
       id: z.string(),
       type: z.string(),
       formula: z.object({ type: z.string(), string: z.string() }),
     }),
-    release: z.object({
+    Release: z.object({
       id: z.string(),
       type: z.string(),
       checkbox: z.boolean(),
     }),
-    description: z.object({
+    Description: z.object({
       id: z.string(),
       type: z.string(),
       rich_text: z.array(
@@ -94,7 +94,7 @@ export const NotionPageSchema = z.object({
         }),
       ),
     }),
-    title: z.object({
+    Name: z.object({
       id: z.string(),
       type: z.string(),
       title: z.array(
