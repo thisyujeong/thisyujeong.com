@@ -1,0 +1,1895 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-814b-a7b3-f67936ab274b",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/4dc22b6d-9cd3-485e-a302-32b4af0fd209/wave-plane.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=54ac1974b66e4eab29948e7dbf92d62d8840d703d869162ebeca8410ebcb3995&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2024-05-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "plan-mesh",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "plan-mesh",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "0e2de41b-9ccb-4684-9165-3c17bc83b0f5",
+              "name": "R3F(react-three-fiber)",
+              "color": "orange"
+            },
+            {
+              "id": "4d29541a-dbd5-4f32-9abb-21489d3b39e6",
+              "name": "React",
+              "color": "blue"
+            },
+            {
+              "id": "b529c4fe-8aa7-42ed-8a87-f110fedda10e",
+              "name": "Typescript",
+              "color": "blue"
+            },
+            {
+              "id": "09cc5a7b-8d7e-417e-8f01-7cf453c33462",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "78b9139b-9a46-4c4f-be97-c9c73f9c98f1",
+              "name": "Vite",
+              "color": "pink"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "37c02b68-fa02-4723-8ee9-71b212a7946c",
+            "name": "개인 프로젝트",
+            "color": "default"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "https://wave-plane-threejs.vercel.app/"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2024-06-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2024년 05월 - 2024년 06월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "평면 형태의 3D 오브젝트를 활용한 인터랙션을 전시하기 위한 웹페이지",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "평면 형태의 3D 오브젝트를 활용한 인터랙션을 전시하기 위한 웹페이지",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Plane Mesh 인터랙티브 웹",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Plane Mesh 인터랙티브 웹",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Plane-Mesh-2303a9fde55a814ba7b3f67936ab274b",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-81b6-a63c-f5f233c0a01c",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:17:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/d09001d4-c554-4b1f-b766-015738fb394a/particle-morphing.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=dd9ecb4ab14f0805bc0b0bfa5b0ba250863900764e4f9617c78ae706740f94b5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2024-04-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "particle-morphing",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "particle-morphing",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "0b1f6b71-bce8-453c-b52a-472e0744c301",
+              "name": "Three.js",
+              "color": "green"
+            },
+            {
+              "id": "09cc5a7b-8d7e-417e-8f01-7cf453c33462",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "af5e82ca-5cbf-45ac-ad31-990e5bb8f871",
+              "name": "Javascript",
+              "color": "yellow"
+            },
+            {
+              "id": "b9ecb2a3-c982-40b3-abcc-312093a99bac",
+              "name": "HTML",
+              "color": "red"
+            },
+            {
+              "id": "0cd674a8-c922-461b-b0aa-ff2797434fe9",
+              "name": "CSS",
+              "color": "purple"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "37c02b68-fa02-4723-8ee9-71b212a7946c",
+            "name": "개인 프로젝트",
+            "color": "default"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "https://particle-morphing-threejs.vercel.app/"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2024-05-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2024년 04월 - 2024년 05월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Three.js와 GSAP ScrollTrigger를 활용해, ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Three.js와 GSAP ScrollTrigger를 활용해, ",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "파티클이 스크롤 위치에 따라 GLTF 3D 모델 형태로 매끄럽게 변형(모핑)",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "파티클이 스크롤 위치에 따라 GLTF 3D 모델 형태로 매끄럽게 변형(모핑)",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "되는 인터랙션을 전시한 웹사이트",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "되는 인터랙션을 전시한 웹사이트",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Particle Morphing 인터랙티브 웹",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Particle Morphing 인터랙티브 웹",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Particle-Morphing-2303a9fde55a81b6a63cf5f233c0a01c",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-813f-8594-e59a7811e705",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:17:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/4cf2eeb0-78ad-491e-8813-0b14ef349675/flippix.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=87276c2199d52f010e03ab3e1bf1552f67c25d358e1a4e3c062f8ecdce7ca6ba&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2025-03-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "flippix-clock",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "flippix-clock",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "25e8e1cc-b2f9-4f5a-bc46-b8a201758c27",
+              "name": "Svelte 5",
+              "color": "orange"
+            },
+            {
+              "id": "f0728cb5-5b8a-4edf-a024-2842d5df5557",
+              "name": "SvelteKit",
+              "color": "orange"
+            },
+            {
+              "id": "9fc5c6d8-e895-49d5-87de-ae52c54fa4dc",
+              "name": "Svelte Store",
+              "color": "orange"
+            },
+            {
+              "id": "b529c4fe-8aa7-42ed-8a87-f110fedda10e",
+              "name": "Typescript",
+              "color": "blue"
+            },
+            {
+              "id": "f4966d55-32e5-4013-a30a-8d130245fea5",
+              "name": "Sass",
+              "color": "red"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "37c02b68-fa02-4723-8ee9-71b212a7946c",
+            "name": "개인 프로젝트",
+            "color": "default"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": "https://github.com/thisyujeong/flippix"
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "flippix-clock.vercel.app"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2025-04-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2025년 03월 - 2025년 04월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Svlete 학습을 목적으로 아날로그 플립 시계를 디지털로 구현한 웹사이트",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Svlete 학습을 목적으로 아날로그 플립 시계를 디지털로 구현한 웹사이트",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Flippix Clock",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Flippix Clock",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Flippix-Clock-2303a9fde55a813f8594e59a7811e705",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-8140-9d44-e29d95080e6c",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/5b115fad-ec6e-4e3a-be67-7390f35f9a17/pc-img-hero-hence.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=203c5c47eafa52364f4cbf3e41af2328fcc4db63bc604eb7f0c30a7ecbe64712&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "external",
+        "external": {
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/00/95/db0095d6-58ff-23e1-0453-f7aa8f8cc703/AppIcon-0-0-1x_U007ephone-0-10-0-85-220.png/460x0w.webp"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2023-03-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "quinvir-hence",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "quinvir-hence",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4d29541a-dbd5-4f32-9abb-21489d3b39e6",
+              "name": "React",
+              "color": "blue"
+            },
+            {
+              "id": "b529c4fe-8aa7-42ed-8a87-f110fedda10e",
+              "name": "Typescript",
+              "color": "blue"
+            },
+            {
+              "id": "d30123a8-a7fe-4203-8ff9-cb2c5adf769e",
+              "name": "React-hook-form",
+              "color": "blue"
+            },
+            {
+              "id": "f4966d55-32e5-4013-a30a-8d130245fea5",
+              "name": "Sass",
+              "color": "red"
+            },
+            {
+              "id": "7e83d7aa-d3f8-44d5-90bc-b6ec3aa05cae",
+              "name": "Lottie-react",
+              "color": "yellow"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.quinvir.hence.henceapp&pcampaignid=web_share"
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "https://apps.apple.com/kr/app/%ED%97%A8%EC%8A%A4-hence/id6466147683"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2023-10-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2023년 03월 - 2023년 10월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "사용자가 자신의 취향 탐색과 소비를 한 플랫폼에서 가능하도록 SNS와 쇼핑이 결합된 모바일 웹뷰 하이브리드 앱 ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "사용자가 자신의 취향 탐색과 소비를 한 플랫폼에서 가능하도록 SNS와 쇼핑이 결합된 모바일 웹뷰 하이브리드 앱 ",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "퀸버스퀘어 HENCE(헨스)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "퀸버스퀘어 HENCE(헨스)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/HENCE-2303a9fde55a81409d44e29d95080e6c",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-817b-ad34-db010bc5da23",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/ff02450b-406c-4dde-9055-e9997351fe12/pc-img-hero.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=d5981c49e4288415d6a6f638f39ad2459267de8a13e62cdd9f13c2dc418931a2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/a038c89e-2d71-4417-aadb-0e607660c1f0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-07-04_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_4.45.54.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=2014edf9590b743cedcc0be1d6869d935d2c224fd254192b368ee9cf45d31736&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.593Z"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2022-06-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "samsung-sep",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "samsung-sep",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4d29541a-dbd5-4f32-9abb-21489d3b39e6",
+              "name": "React",
+              "color": "blue"
+            },
+            {
+              "id": "b529c4fe-8aa7-42ed-8a87-f110fedda10e",
+              "name": "Typescript",
+              "color": "blue"
+            },
+            {
+              "id": "c4fa1c21-5e50-4cca-8c45-a82f0e9eee66",
+              "name": "Zustand",
+              "color": "blue"
+            },
+            {
+              "id": "779ea474-96e7-4c61-8f4a-800ae9a7b3f8",
+              "name": "Styled-components",
+              "color": "brown"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": null
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2023-03-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2022년 06월 - 2023년 03월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "삼성전자의 다양한 제품과 콘텐츠를 탐색할 수 있는 TV용 애플리케이션으로 OTT형태의 웹앱입니다.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "삼성전자의 다양한 제품과 콘텐츠를 탐색할 수 있는 TV용 애플리케이션으로 OTT형태의 웹앱입니다.",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "삼성전자 Samsung Experience Plus ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "삼성전자 Samsung Experience Plus ",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Samsung-Experience-Plus-2303a9fde55a817bad34db010bc5da23",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-8110-9109-f2cdbff83280",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/7e051f94-6850-4e90-8b1a-29df49dcb56c/dreamplus-landing-hero.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=8f1112796918f2c6035a6623923d806d834db417a251fe14c25e4d6c9385b5c1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/3a95a37f-b607-4f34-aa6a-3619df69d956/200px-%E1%84%83%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%89%E1%85%B3_%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=c58b2dfc7d16d96fbba0545d9d5a2ea068e418be60297a516ce2554a2e6ba9d3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.593Z"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2024-11-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "hanwha-dreamplus",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "hanwha-dreamplus",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "1b1d63bd-0611-4738-8316-356c83889bb4",
+              "name": "Next.js",
+              "color": "blue"
+            },
+            {
+              "id": "b529c4fe-8aa7-42ed-8a87-f110fedda10e",
+              "name": "Typescript",
+              "color": "blue"
+            },
+            {
+              "id": "c4fa1c21-5e50-4cca-8c45-a82f0e9eee66",
+              "name": "Zustand",
+              "color": "blue"
+            },
+            {
+              "id": "d30123a8-a7fe-4203-8ff9-cb2c5adf769e",
+              "name": "React-hook-form",
+              "color": "blue"
+            },
+            {
+              "id": "cfd50154-c87c-4887-bda1-0a4e593c4d57",
+              "name": "i18next",
+              "color": "gray"
+            },
+            {
+              "id": "f4966d55-32e5-4013-a30a-8d130245fea5",
+              "name": "Sass",
+              "color": "red"
+            },
+            {
+              "id": "78b9139b-9a46-4c4f-be97-c9c73f9c98f1",
+              "name": "Vite",
+              "color": "pink"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "https://dreamplus.asia"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2025-01-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2024년 11월 - 2025년 01월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "스타트업의 성장을 지원하는 프로그램과 공간을 제공하는 한화 드림플러스의 포털 신규 구축",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "스타트업의 성장을 지원하는 프로그램과 공간을 제공하는 한화 드림플러스의 포털 신규 구축",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "한화생명 드림플러스 포털 개편",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "한화생명 드림플러스 포털 개편",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/2303a9fde55a81109109f2cdbff83280",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-814d-b68c-d224e4f17813",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/cf734875-e12c-4ce1-a878-3886583ed2dc/pc-img-detail-hero-hds3x-min.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=88d0f53b16ebe7cc207f3b586016f5ca2176ce54a8fbdba99ec57aa2d69cd858&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/cceeaeab-87e0-46d3-aea9-cdc3d0025fd4/skhynix.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=49a3ed35af6bf560b09e8be81339b6bb7d8b28b5b5783d247f01a23a5ef8f400&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.593Z"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2021-06-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "sk-hynix-sds",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "sk-hynix-sds",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4d29541a-dbd5-4f32-9abb-21489d3b39e6",
+              "name": "React",
+              "color": "blue"
+            },
+            {
+              "id": "779ea474-96e7-4c61-8f4a-800ae9a7b3f8",
+              "name": "Styled-components",
+              "color": "brown"
+            },
+            {
+              "id": "636a3ede-8f40-4c8b-a29a-7df625e03b89",
+              "name": "less",
+              "color": "orange"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": null
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2022-02-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2021년 06월 - 2022년 02월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "기존 SK 하이닉스 내부 디자인 시스템을 유지보수 및 추가 개발하는 고도화 작업",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "기존 SK 하이닉스 내부 디자인 시스템을 유지보수 및 추가 개발하는 고도화 작업",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SK하이닉스 Signal Design System 고도화",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SK하이닉스 Signal Design System 고도화",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/SK-Signal-Design-System-2303a9fde55a814db68cd224e4f17813",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-819b-8bb1-e4d711fe1afb",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/9a44883a-7a18-430a-886f-a1962a94a7e4/lg-shield-hero_pc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=85d218f493c2554aecb7c96fa3ef41c1d3ffe5b9c19f14fe1fce9ff88ff087e7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/0f4677a2-67d3-4434-9a7a-198a993b498f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-07-04_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.27.15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=2facd25a69b060deac8986a73b60e4e9cbeb235e6072c3a795ba44348c96cc3e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.593Z"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2025-01-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "lg-shield",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "lg-shield",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "af5e82ca-5cbf-45ac-ad31-990e5bb8f871",
+              "name": "Javascript",
+              "color": "yellow"
+            },
+            {
+              "id": "b9ecb2a3-c982-40b3-abcc-312093a99bac",
+              "name": "HTML",
+              "color": "red"
+            },
+            {
+              "id": "f4966d55-32e5-4013-a30a-8d130245fea5",
+              "name": "Sass",
+              "color": "red"
+            },
+            {
+              "id": "09cc5a7b-8d7e-417e-8f01-7cf453c33462",
+              "name": "GSAP",
+              "color": "green"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "https://lgshield.lge.com/ko"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2025-05-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2025년 01월 - 2025년 05월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "LG전자의 보안 기술 소개 홈페이지",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "LG전자의 보안 기술 소개 홈페이지",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "LG Shield 홈페이지 구축",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "LG Shield 홈페이지 구축",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/LG-Shield-2303a9fde55a819b8bb1e4d711fe1afb",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-8148-984d-c687da5c2a03",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/50defde7-d331-41b9-8fbf-8587b837fb1b/samsung-1-logo-png-transparent.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=c568ef2d56f8d85086ea9faa1e203ca92e8b1ba1a66ee384dab89a267f0770d0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/0a31abfa-7738-41eb-b39a-7368104621eb/samsung.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=59729802d19437f828dce5de581908724c3cee43fa0adc5e609bd12f7c006785&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.593Z"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2024-01-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "samsung-space-ux",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "samsung-space-ux",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4d29541a-dbd5-4f32-9abb-21489d3b39e6",
+              "name": "React",
+              "color": "blue"
+            },
+            {
+              "id": "b529c4fe-8aa7-42ed-8a87-f110fedda10e",
+              "name": "Typescript",
+              "color": "blue"
+            },
+            {
+              "id": "c163f741-ab9b-447e-88da-2ae9f26afc97",
+              "name": "Ant.Design",
+              "color": "blue"
+            },
+            {
+              "id": "f4966d55-32e5-4013-a30a-8d130245fea5",
+              "name": "Sass",
+              "color": "red"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": null
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2024-07-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2024년 01월 - 2024년 07월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "사내의 분리된 5개의 플랫폼을 하나로 통합하여 통일된 UI/UX를 기반으로 신규 플랫폼 구축",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "사내의 분리된 5개의 플랫폼을 하나로 통합하여 통일된 UI/UX를 기반으로 신규 플랫폼 구축",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "삼성전자 SPACE UX 통합 개발",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "삼성전자 SPACE UX 통합 개발",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/SPACE-UX-2303a9fde55a8148984dc687da5c2a03",
+      "public_url": null
+    },
+    {
+      "object": "page",
+      "id": "2303a9fd-e55a-8157-a4ef-ff21176d9049",
+      "created_time": "2025-07-14T02:22:00.000Z",
+      "last_edited_time": "2025-07-26T06:16:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "78cc0ce6-7026-448a-92ea-ccd54df864c4"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/e01de403-50ba-49f0-959a-5ca7ca969d09/pc-img-hero-inno.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=7391d658dff2cb166e466659d1d2671c6cb0ef290e49ddc4fc00b9db01479743&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.573Z"
+        }
+      },
+      "icon": {
+        "type": "file",
+        "file": {
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/98496cd8-d194-44c6-8ee7-30eca38fe81c/200dd991-fd72-4997-bdc7-bd1b31cf9730/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-07-04_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_4.16.10.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666APFTNNL%2F20250726%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250726T075151Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaCXVzLXdlc3QtMiJGMEQCIDVD%2FCzSGVsDKR0XwfJgKB3VCdGmQ16Y0MquOh%2FPHqCEAiBL4I7aLseOIwPDqJYeAcqbIB6WnG5%2B0sfNpIZ2hsfDwSr%2FAwhYEAAaDDYzNzQyMzE4MzgwNSIMdkhxXyUH3NbhszKzKtwDUOqGdL%2BRg2VaTrcRGzbgVGGakupXK8yZBzuRudGczVxuaP%2BvY%2Bj9XDDhuTJ%2BPDOm3YHu85ozMmIGlsTuJMVbtwA%2BeUIy10L3OtOlYiU6965uQi6pdj93XLPv4sOvl1FAVnuViATzYa7r%2Bp6MYQqOMQQ3Gckd9G07SHCULonyS62tQsMZvYbXWppEox2Nkw4ylnUwhhS23wIwj2BeRGpqmNDNq4ag3xiE74Lt9BjUmgWUsIY2OAwpFq%2BQ9PfZ%2Fo66TwQlFMmqscQLqSdVilTv2gXbWj6v4tDonInYVS7K0HsHDPNhqxqr3szbZH3a3hCT3AamebKs%2BCwIXoK2UhhNMsAPfFzna2pa9xwgtNMT2%2B5KNJmXnt4bSWgdSjhIzBsV%2BOoqfphGO6P8yUH6q%2FK%2FfBAH%2BqM0bOUnlXJsm%2F%2BB46wv3B6XHzKNt3p0ILCCTkGJZWZPDuRIhXaqAUmmydvPmMsQvoAdOdmfxeq57D4XszYPIxP%2BEkvLWmGgje4MkXyqrzBlSNH%2BjuAA7%2FfgfS3R4uiFNiVHpLJbTvnXsDJEOTejGEfglbTLmmHwfvqiFW%2Fgg3t1ttP%2BKJKusBMvh%2BJkF2NAzLeIlMvR6fFGubwmu6kBLIkkNNp%2BLiQu%2BFUwnIeSxAY6pgH%2BYN7Tnn8DMU0oeckcTa6Qo6RKNqLcd%2FSXQEENJL7G95IxVdSXhkvK9QPoASukvU2iGGraIQDdyJWZeYxRfBEj%2FG5jnnuUhSvnGDmvNicZl88a6Rl4gxBGOjnQ8RUEsi7VOuJDK32tRb2Q2tqdcnAClQ1YcT%2BhZrH1ltxRN2gQ4%2BwotHbX9sABRsAXavCfhe2S%2BuD5eFE%2B%2BEl%2BqtLnXpF8sxdGlmjs&X-Amz-Signature=c40789170dcc5169d8fb3b70a31b0bcda31e8bea24fa8895e17c2f55d7bc3671&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "expiry_time": "2025-07-26T08:51:51.593Z"
+        }
+      },
+      "parent": {
+        "type": "database_id",
+        "database_id": "2303a9fd-e55a-8150-91e6-f691889f2b47"
+      },
+      "archived": false,
+      "in_trash": false,
+      "properties": {
+        "start_date": {
+          "id": "%3Bv%40i",
+          "type": "date",
+          "date": {
+            "start": "2022-12-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "slug": {
+          "id": "GXgu",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "innoboost",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "innoboost",
+              "href": null
+            }
+          ]
+        },
+        "stack": {
+          "id": "Hwgo",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "af5e82ca-5cbf-45ac-ad31-990e5bb8f871",
+              "name": "Javascript",
+              "color": "yellow"
+            },
+            {
+              "id": "b9ecb2a3-c982-40b3-abcc-312093a99bac",
+              "name": "HTML",
+              "color": "red"
+            },
+            {
+              "id": "f4966d55-32e5-4013-a30a-8d130245fea5",
+              "name": "Sass",
+              "color": "red"
+            },
+            {
+              "id": "09cc5a7b-8d7e-417e-8f01-7cf453c33462",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "e01041f2-cc56-41d2-a1e5-d1c8ef46fa53",
+              "name": "Webpack",
+              "color": "default"
+            },
+            {
+              "id": "f053c20c-bc06-497b-9f34-b55128666530",
+              "name": "SVG",
+              "color": "red"
+            }
+          ]
+        },
+        "class": {
+          "id": "LFw%7B",
+          "type": "select",
+          "select": {
+            "id": "e2917f82-1f84-4e33-8a2c-96e62d76533b",
+            "name": "HNINE",
+            "color": "pink"
+          }
+        },
+        "link2": {
+          "id": "Tkam",
+          "type": "url",
+          "url": null
+        },
+        "link1": {
+          "id": "ZLt%3B",
+          "type": "url",
+          "url": "https://www.innoboost.co.kr"
+        },
+        "end_date": {
+          "id": "nkxJ",
+          "type": "date",
+          "date": {
+            "start": "2023-03-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "period": {
+          "id": "vOG%60",
+          "type": "formula",
+          "formula": {
+            "type": "string",
+            "string": "2022년 12월 - 2023년 03월"
+          }
+        },
+        "release": {
+          "id": "y%5C%5BZ",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "description": {
+          "id": "%7DyvC",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "제약 바이오 기업을 대상으로 토탈 솔루션 및 컨설팅 서비스를 제공하는 전문 에이전시 홈페이지 구축",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "제약 바이오 기업을 대상으로 토탈 솔루션 및 컨설팅 서비스를 제공하는 전문 에이전시 홈페이지 구축",
+              "href": null
+            }
+          ]
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "이노부스트 공식 홈페이지",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "이노부스트 공식 홈페이지",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/2303a9fde55a8157a4efff21176d9049",
+      "public_url": null
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_database",
+  "page_or_database": {},
+  "request_id": "a0a33117-4b01-4f3e-9fcc-0db8503543ba"
+}
