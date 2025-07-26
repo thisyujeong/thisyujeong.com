@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState, useRef } from 'react';
 import classnames from 'classnames/bind';
 import styles from './MouseTrailSVG.module.scss';
@@ -53,12 +55,12 @@ function getSmoothPath(points: { x: number; y: number }[]) {
 const MouseTrailSVG = () => {
   const [points, setPoints] = useState<{ x: number; y: number; createdAt: number }[]>([]); // 지나온 포인트 정보
   const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
   const [mouse, setMouse] = useState<{ x: number; y: number }>({
-    x: window.innerWidth / 2,
-    y: window.innerHeight / 2,
+    x: 0,
+    y: 0,
   });
   const [radius, setRadius] = useState(BASE_RADIUS);
   const [isHover, setIsHover] = useState(false);
@@ -71,6 +73,11 @@ const MouseTrailSVG = () => {
     const handleResize = () => {
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
     };
+
+    // 초기 크기 설정
+    setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    setMouse({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

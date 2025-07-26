@@ -1,14 +1,16 @@
+'use client';
+
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { queryClient } from '@/main';
+import Link from 'next/link';
 import { getPageBySlug, getPages } from '@/lib/notion';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import classnames from 'classnames/bind';
 import styles from './ProjectList.module.scss';
 
 const cx = classnames.bind(styles);
 
 const ProjectList = () => {
+  const queryClient = useQueryClient();
   const { data, isLoading } = useQuery({
     queryKey: ['notion-pages'],
     queryFn: getPages,
@@ -27,7 +29,7 @@ const ProjectList = () => {
         }
       });
     }
-  }, [data]);
+  }, [data, queryClient]);
 
   if (isLoading) return <p>로딩 중...</p>;
   if (!data) return <p>프로젝트 없음</p>;
@@ -40,7 +42,7 @@ const ProjectList = () => {
 
         return (
           <li className={cx('project-list')} key={project.id}>
-            <Link to={`/project/${slug}`}>{name}</Link>
+            <Link href={`/project/${slug}`}>{name}</Link>
           </li>
         );
       })}

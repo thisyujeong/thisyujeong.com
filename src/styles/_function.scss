@@ -1,6 +1,7 @@
 @use './variables' as *;
+@use 'sass:math';
 
 // rem 값을 자동으로 계산해주는 함수
 @function rem($px, $base: $base-font) {
-  @return ($px / $base) * 1rem;
+  @return math.div($px, $base) * 1rem;
 }

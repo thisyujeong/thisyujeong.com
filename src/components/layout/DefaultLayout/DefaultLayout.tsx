@@ -1,5 +1,5 @@
 import { type PropsWithChildren } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { metadata } from '@/constants/metadata';
 import classnames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
@@ -13,19 +13,19 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
       <MouseTrailSVG />
       <header className={cx('header')}>
         <h1 className={cx('logo')}>
-          <Link to="/">{metadata.url}</Link>
+          <Link href="/">{metadata.url}</Link>
         </h1>
 
         <nav className={cx('navigation')}>
           <ul>
             <li>
-              <Link to="#;">about</Link>
+              <Link href="#;">about</Link>
             </li>
             <li>
-              <Link to="#;">archive</Link>
+              <Link href="#;">archive</Link>
             </li>
             <li>
-              <Link to="#;">github</Link>
+              <Link href="#;">github</Link>
             </li>
           </ul>
         </nav>
