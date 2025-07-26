@@ -1,10 +1,13 @@
+'use client';
+
 import { getPageBySlug } from '@/lib/notion';
 import { useQuery } from '@tanstack/react-query';
-import { useParams } from 'react-router-dom';
 
-const ProjectPage = () => {
-  const { id } = useParams<{ id: string }>();
+interface ProjectPageProps {
+  id: string;
+}
 
+const ProjectPage = ({ id }: ProjectPageProps) => {
   const {
     data: page,
     isLoading,
