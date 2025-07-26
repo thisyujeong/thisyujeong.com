@@ -13,6 +13,10 @@
   clip: rect(0 0 0 0);
 }
 
+* {
+  cursor: none;
+}
+
 html {
   font-family: 'PublicSans';
   font-size: 100vw / $desktop-screen * 16;
@@ -20,10 +24,6 @@ html {
 
 body {
   overflow-x: hidden;
-}
-
-* {
-  cursor: none;
 }
 
 // @media screen and (max-width: 1280px) {

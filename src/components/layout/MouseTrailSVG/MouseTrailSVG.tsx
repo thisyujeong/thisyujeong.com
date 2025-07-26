@@ -11,10 +11,11 @@ const TRAIL_WIDTH = 4;
 
 /* Circle */
 const CIRCLE_COLOR = '#28d36a';
-const BASE_RADIUS = 16;
-const MIN_RADIUS = 8;
-const FOCUS_RADIUS = 24; // 마우스 hover 상태
-const DOWN_RADIUS = 12; // 마우스 press 상태
+const BASE_RADIUS = 6;
+const MIN_RADIUS = 3;
+const HOVER_RADIUS = 12; // 마우스 hover 상태
+const DOWN_RADIUS = 4; // 마우스 press 상태
+const HOVER_DOWN_RADIUS = 10; // 마우스 hover & press 상태
 const RESTORE_SPEED = 0.09; // 반지름 보간 속도
 
 /**
@@ -83,14 +84,21 @@ const MouseTrailSVG = () => {
 
       // hover 감지: pointer 커서가 적용된 요소 위인지 확인
       const el = document.elementFromPoint(x, y) as HTMLElement | null;
+      console.log(el?.tagName);
 
       if (el) {
-        const style = window.getComputedStyle(el);
-        setIsHover(style.cursor === 'pointer');
+        const isInteractive =
+          el.tagName === 'A' ||
+          el.tagName === 'BUTTON' ||
+          el.getAttribute('role') === 'button' ||
+          !!el.onclick ||
+          el.classList.contains('hover-target'); // 커스텀 기준 가능
+
+        setIsHover(isInteractive);
       } else {
         setIsHover(false);
       }
-      // points에 추가
+
       setPoints(prev => [...prev, { x, y, createdAt: Date.now() }]);
     };
 
@@ -133,8 +141,9 @@ const MouseTrailSVG = () => {
 
       let targetRadius = BASE_RADIUS;
 
+      if (isHover && isPress) targetRadius = HOVER_DOWN_RADIUS;
       // Hover
-      if (isHover) targetRadius = FOCUS_RADIUS;
+      else if (isHover) targetRadius = HOVER_RADIUS;
       // Pressing
       else if (isPress) targetRadius = DOWN_RADIUS;
       // 속도 기반 사이즈 조절
