@@ -21,10 +21,15 @@
 html {
   font-family: 'PublicSans';
   font-size: math.div(100vw, $desktop-screen) * 16;
+  background-color: #f0ece6;
 }
 
 body {
   overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(233, 47, 18, 0.44);
 }
 
 // @media screen and (max-width: 1280px) {
