@@ -21,6 +21,16 @@ export async function GET(request: NextRequest) {
           equals: slug,
         },
       },
+      sorts: [
+        {
+          property: 'EndDate',
+          direction: 'descending',
+        },
+        {
+          property: 'StartDate',
+          direction: 'descending',
+        },
+      ],
     });
 
     return NextResponse.json(response.results[0]);

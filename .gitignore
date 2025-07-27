@@ -40,3 +40,6 @@ dist-ssr
 .next/cache/
 .next/trace/
 .next/trace/
+
+# TypeScript build info
+*.tsbuildinfo

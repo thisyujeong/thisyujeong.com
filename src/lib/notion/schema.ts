@@ -119,6 +119,6 @@ export const NotionPageSchema = z.object({
   public_url: z.null(),
 });
 
-export const NotionPagesResponseSchema = z.array(NotionPageSchema);
+export const NotionPagesSchema = z.array(NotionPageSchema);
 
 export type NotionPage = z.infer<typeof NotionPageSchema>;

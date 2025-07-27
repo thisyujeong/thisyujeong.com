@@ -13,26 +13,34 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const filters = [
-      {
-        property: 'Release',
-        checkbox: {
-          equals: true,
-        },
-      },
-      {
-        property: 'Class',
-        select: {
-          equals: classParam,
-        },
-      },
-    ];
-
     const response = await notion.databases.query({
       database_id: NOTION_DATABASE_ID,
       filter: {
-        and: filters,
+        and: [
+          {
+            property: 'Release',
+            checkbox: {
+              equals: true,
+            },
+          },
+          {
+            property: 'Class',
+            select: {
+              equals: classParam,
+            },
+          },
+        ],
       },
+      sorts: [
+        {
+          property: 'EndDate',
+          direction: 'descending',
+        },
+        {
+          property: 'StartDate',
+          direction: 'descending',
+        },
+      ],
     });
 
     return NextResponse.json(response.results);

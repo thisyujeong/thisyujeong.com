@@ -2,8 +2,8 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
-import { getPageBySlug, getPages } from '@/lib/notion';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { getClassNames, getClassPages, getPageBySlug, getPages } from '@/lib/notion';
+import { useQueries, useQuery, useQueryClient } from '@tanstack/react-query';
 import classnames from 'classnames/bind';
 import styles from './ProjectList.module.scss';
 

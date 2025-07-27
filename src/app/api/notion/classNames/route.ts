@@ -1,17 +1,19 @@
+import { handleNotionError, notion, NOTION_DATABASE_ID } from '@/lib/notion/client';
+import type { NotionPage } from '@/lib/notion/schema';
 import { NextResponse } from 'next/server';
-import { notion, NOTION_DATABASE_ID, handleNotionError } from '@/lib/notion/client';
 
 /**
- * 모든 페이지 데이터 불러오기
+ * 클래스 이름 목록 조회
+ * @returns 클래스 이름 목록
  */
 export async function GET() {
   try {
     const response = await notion.databases.query({
       database_id: NOTION_DATABASE_ID,
       filter: {
-        property: 'Release',
-        checkbox: {
-          equals: true,
+        property: 'Class',
+        select: {
+          is_not_empty: true,
         },
       },
       sorts: [
@@ -26,7 +28,13 @@ export async function GET() {
       ],
     });
 
-    return NextResponse.json(response.results);
+    const classNames = new Set(
+      (response.results as NotionPage[])
+        .map(item => item.properties?.Class?.select?.name)
+        .filter((name): name is string => typeof name === 'string'),
+    );
+
+    return NextResponse.json(Array.from(classNames));
   } catch (error) {
     const errorResponse = handleNotionError(error);
     return NextResponse.json(errorResponse, { status: 500 });

@@ -148,12 +148,10 @@ const MouseTrailSVG = () => {
       let targetRadius = BASE_RADIUS;
 
       if (isHover && isPress) targetRadius = HOVER_DOWN_RADIUS;
-      // Hover
       else if (isHover) targetRadius = HOVER_RADIUS;
-      // Pressing
       else if (isPress) targetRadius = DOWN_RADIUS;
-      // 속도 기반 사이즈 조절
       else {
+        // 속도 기반 사이즈 조절
         const now = performance.now(); // 현재 속도
         if (prevMouse.current) {
           const dx = mouse.x - prevMouse.current.x;

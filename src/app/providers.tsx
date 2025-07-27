@@ -1,7 +1,8 @@
 'use client';
 
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { getClassNames } from '@/lib/notion';
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(
@@ -15,6 +16,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
         },
       }),
   );
+
+  useEffect(() => {
+    queryClient.prefetchQuery({
+      queryKey: ['class-list'],
+      queryFn: getClassNames,
+    });
+  }, [queryClient]);
 
   return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
 }
