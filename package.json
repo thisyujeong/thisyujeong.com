@@ -15,12 +15,14 @@
     "@tanstack/react-query": "^5.83.0",
     "classnames": "^2.5.1",
     "gsap": "^3.12.5",
+    "matter-js": "^0.20.0",
     "next": "14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zod": "^4.0.10"
   },
   "devDependencies": {
+    "@types/matter-js": "^0.19.8",
     "@types/node": "^24.1.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

@@ -1,0 +1,14 @@
+.canvas-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0 rem(-44);
+  border: 1px solid $black-color;
+
+  // 스크롤 허용을 위한 설정
+  canvas {
+    pointer-events: auto;
+    touch-action: pan-y; // 세로 스크롤 허용
+    overscroll-behavior: auto; // 스크롤 동작 허용
+  }
+}

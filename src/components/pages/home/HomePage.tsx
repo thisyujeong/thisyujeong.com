@@ -5,6 +5,7 @@ import { useLayoutEffect, useRef } from 'react';
 import { staggerRotateIn } from '@/lib/gsap/animation';
 import styles from './HomePage.module.scss';
 import ProjectList from '@/components/ui/ProjectList/ProjectList';
+import PhysicsCanvas from '@/components/ui/PhysicsCanvas/PhysicsCanvas';
 
 const cx = classnames.bind(styles);
 
@@ -31,6 +32,7 @@ const HomePage = () => {
       <div className={cx('projects')}>
         <ProjectList />
       </div>
+      <PhysicsCanvas />
     </div>
   );
 };
