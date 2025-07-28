@@ -7,7 +7,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query';
 import classnames from 'classnames/bind';
 import styles from './ProjectList.module.scss';
 import ProjectItem from '../ProjectItem/ProjectItem';
-import { staggerFadeIn } from '@/lib/gsap';
+import { staggerFadeIn } from '@/lib/gsap/animation';
 
 const cx = classnames.bind(styles);
 

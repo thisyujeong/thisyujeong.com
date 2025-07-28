@@ -10,7 +10,6 @@ const cx = classnames.bind(styles);
 const DefaultLayout = ({ children }: PropsWithChildren) => {
   return (
     <div className={cx('wrapper')}>
-      <MouseTrailSVG />
       <header className={cx('header')}>
         <h1 className={cx('logo')}>
           <Link href="/">{metadata.url}</Link>

@@ -6,7 +6,7 @@
   grid-template-columns: 1fr rem(300) rem(80);
   justify-content: space-between;
   align-items: center;
-  border-bottom: rem(3) solid #000;
+  border-bottom: rem(3) solid $black-color;
   transition: 0.3s;
 
   &:hover::before {
@@ -15,8 +15,8 @@
   }
 
   &:hover {
-    background-color: #ede7de;
-    border-color: #00000020;
+    border-color: $border-mute-color;
+    background-color: $background-hover-color;
   }
 
   &:before {
@@ -27,7 +27,7 @@
     right: 0;
     bottom: rem(-3);
     transition: width 0.5s ease-in-out;
-    background-color: #db3421;
+    background-color: $border-accent-color;
   }
 }
 
@@ -43,7 +43,7 @@
 
 .project-class {
   display: inline-block;
-  color: #f5351f;
+  color: $accent-color;
   font-size: rem(16);
   text-align: center;
   font-weight: 700;

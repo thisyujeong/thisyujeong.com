@@ -2,7 +2,7 @@
 
 import classnames from 'classnames/bind';
 import { useLayoutEffect, useRef } from 'react';
-import { staggerRotateIn } from '@/lib/gsap';
+import { staggerRotateIn } from '@/lib/gsap/animation';
 import styles from './HomePage.module.scss';
 import ProjectList from '@/components/ui/ProjectList/ProjectList';
 
@@ -29,7 +29,6 @@ const HomePage = () => {
         </div>
       </h2>
       <div className={cx('projects')}>
-        <div className={cx('project-thumbnail')}></div>
         <ProjectList />
       </div>
     </div>
