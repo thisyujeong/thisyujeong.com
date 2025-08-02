@@ -1,51 +1,5 @@
-@use '@/styles/function.scss' as *;
-
-.link {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: rem(1.5);
-    background-color: currentColor;
-    transition: width 0.3s;
-  }
-
-  &:hover::after {
-    left: 0;
-    right: unset;
-    width: 100%;
-  }
-}
-
-.header {
-  padding: rem(40) rem(44);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .logo {
-    font-size: rem(20);
-    font-weight: 400;
-  }
-}
-
 .main {
   padding: rem(20) rem(44);
-}
-
-.navigation {
-  ul {
-    display: flex;
-    gap: rem(40);
-  }
-  li a {
-    @extend .link;
-    font-size: rem(18);
-  }
 }
 
 .footer {

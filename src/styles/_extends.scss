@@ -1,0 +1,22 @@
+@use '@/styles/function.scss' as *;
+
+.link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: rem(1.5);
+    background-color: currentColor;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    left: 0;
+    right: unset;
+    width: 100%;
+  }
+}
