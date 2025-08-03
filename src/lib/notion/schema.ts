@@ -134,6 +134,26 @@ export const NotionPageSchema = z.object({
         }),
       ),
     }),
+    Color: z.object({
+      id: z.string(),
+      type: z.string(),
+      rich_text: z.array(
+        z.object({
+          type: z.string(),
+          text: z.object({ content: z.string(), link: z.null() }),
+          annotations: z.object({
+            bold: z.boolean(),
+            italic: z.boolean(),
+            strikethrough: z.boolean(),
+            underline: z.boolean(),
+            code: z.boolean(),
+            color: z.string(),
+          }),
+          plain_text: z.string(),
+          href: z.null(),
+        }),
+      ),
+    }),
   }),
   url: z.string(),
   public_url: z.null(),

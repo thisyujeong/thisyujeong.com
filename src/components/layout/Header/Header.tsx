@@ -29,18 +29,21 @@ const Header = () => {
   return (
     <header className={cx('header', { 'is-hidden': !isVisible })}>
       <h1 className={cx('logo')}>
-        <Link href="/">{metadata.url}</Link>
+        <Link href="/">TY</Link>
       </h1>
 
       <nav className={cx('navigation')}>
         <ul>
           <li>
+            {/* 업무 */}
             <Link href="#">works</Link>
           </li>
           <li>
+            {/* 사이드 프로젝트 */}
             <Link href="#">archive</Link>
           </li>
           <li>
+            {/* 소개 */}
             <Link href="#">about</Link>
           </li>
         </ul>

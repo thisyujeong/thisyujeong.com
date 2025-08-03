@@ -8,11 +8,11 @@ const cx = classnames.bind(styles);
 
 /* Trail */
 const TAIL_DURATION = 100; // 마우스 라인 흔적 지속 시간 (ms)
-const TRAIL_COLOR = '#f5351f';
+const TRAIL_COLOR = '#000000';
 const TRAIL_WIDTH = 4;
 
 /* Circle */
-const CIRCLE_COLOR = '#f5351f';
+const CIRCLE_COLOR = '#000000';
 const BASE_RADIUS = 6;
 const MIN_RADIUS = 3;
 const HOVER_RADIUS = 18; // 마우스 hover 상태
