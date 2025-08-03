@@ -2,15 +2,12 @@ import { type PropsWithChildren } from 'react';
 import { metadata } from '@/constants/metadata';
 import classnames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
-import Header from '../Header/Header';
 
 const cx = classnames.bind(styles);
 
 const DefaultLayout = ({ children }: PropsWithChildren) => {
   return (
     <div className={cx('wrapper')}>
-      <Header />
-
       <main className={cx('main')}>{children}</main>
 
       <footer className={cx('footer')}>

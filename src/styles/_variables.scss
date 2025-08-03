@@ -5,12 +5,13 @@ $desktop-screen: 1920;
 // colors
 $white-color: #fff;
 $black-color: #111111;
+$text-color: $black-color;
+$inverse-text-color: $white-color;
 $border-color: $black-color;
 $border-mute-color: #11111120;
 
 $background-color: #f0ece6;
 $background-hover-color: #ede7de;
-$inverse-color: $white-color;
 
 $primary-color: #ffde60;
 $accent-color: #f5351f;

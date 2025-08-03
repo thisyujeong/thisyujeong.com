@@ -6,6 +6,7 @@ import { Providers } from './providers';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import ScrollWrapper from '@/components/layout/ScrollWrapper/ScrollWrapper';
 import MouseTrailSVG from '@/components/layout/MouseTrailSVG/MouseTrailSVG';
+import Header from '@/components/layout/Header/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,6 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MouseTrailSVG />
 
           {/* scroll smoother */}
+          <Header />
+
           <ScrollWrapper>
             <DefaultLayout>{children}</DefaultLayout>
           </ScrollWrapper>

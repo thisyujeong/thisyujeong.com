@@ -2,9 +2,8 @@
 
 import classnames from 'classnames/bind';
 import { useLayoutEffect, useRef } from 'react';
-import { staggerRotateIn } from '@/lib/gsap/animation';
 import styles from './HomePage.module.scss';
-import ProjectList from '@/components/ui/ProjectList/ProjectList';
+import gsap from 'gsap';
 
 const cx = classnames.bind(styles);
 
@@ -13,24 +12,35 @@ const HomePage = () => {
 
   useLayoutEffect(() => {
     if (titleRef.current) {
-      const titleLines = titleRef.current.querySelectorAll('div span');
-      staggerRotateIn(Array.from(titleLines), 0.3);
+      gsap.to(titleRef.current, {
+        x: -titleRef.current.clientWidth / 2,
+        duration: 16,
+        ease: 'linear',
+        repeat: -1,
+      });
     }
   }, []);
 
   return (
     <div className={cx('container')}>
-      <h2 className={cx('title')} ref={titleRef}>
-        <div className={cx('title-line')}>
-          <span>The Archive</span>
-        </div>
-        <div className={cx('title-line')}>
-          <span>2021 - {new Date().getFullYear()}</span>
-        </div>
-      </h2>
-      <div className={cx('projects')}>
-        <ProjectList />
-      </div>
+      <section className={cx('hero')}>
+        <h2 className={cx('title')}>
+          <div className={cx('title-rolling')} ref={titleRef}>
+            <span className={cx('title-line')}>
+              The Archive (2021 - {new Date().getFullYear()}) ·{' '}
+            </span>
+            <span className={cx('title-line')}>
+              The Archive (2021 - {new Date().getFullYear()}) ·{' '}
+            </span>
+            <span className={cx('title-line')}>
+              The Archive (2021 - {new Date().getFullYear()}) ·{' '}
+            </span>
+            <span className={cx('title-line')}>
+              The Archive (2021 - {new Date().getFullYear()}) ·{' '}
+            </span>
+          </div>
+        </h2>
+      </section>
     </div>
   );
 };

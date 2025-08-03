@@ -1,9 +1,19 @@
 .header {
   position: relative;
-  padding: rem(40) rem(44);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: rem(30) rem(44);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    transform: translateY(-100%);
+  }
 
   .logo {
     font-size: rem(20);
