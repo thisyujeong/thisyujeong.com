@@ -49,7 +49,7 @@ const ProjectGrid = () => {
   }, [data]);
 
   useLayoutEffect(() => {
-    if (!containerRef.current || !listRef.current || !imagesLoaded) return;
+    if (!containerRef.current || !listRef.current || !data || !imagesLoaded) return;
     const blinds = listRef.current.querySelectorAll('[data-blind]');
     const images = listRef.current.querySelectorAll('img');
 
@@ -61,12 +61,11 @@ const ProjectGrid = () => {
       scrollTrigger: {
         trigger: containerRef.current,
         start: 'top bottom',
-        markers: true,
         onEnter: () => {
           blinds.forEach((blind, index) => {
-            const tl = gsap.timeline({ delay: 0.3 });
-            const direction = blind.getAttribute('data-blind');
             images[index].style.opacity = '0';
+            const direction = blind.getAttribute('data-blind');
+            const tl = gsap.timeline();
 
             if (direction === 'up') {
               tl.from(blind, { top: 'unset', bottom: 0, width: '100%', height: '0' })
@@ -93,7 +92,7 @@ const ProjectGrid = () => {
         },
       },
     });
-  }, [imagesLoaded]);
+  }, [imagesLoaded, data]);
 
   if (!data) return <p>프로젝트 없음</p>;
 
@@ -128,6 +127,7 @@ const ProjectGrid = () => {
                     height={0}
                     sizes="400px"
                     alt={name}
+                    priority
                   />
                 </div>
               </div>
