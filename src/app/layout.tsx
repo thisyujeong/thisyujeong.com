@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <Providers>
           {/* mouse trail */}
-          <MouseTrailSVG />
+          {/* <MouseTrailSVG /> */}
 
           {/* scroll smoother */}
           <Header />

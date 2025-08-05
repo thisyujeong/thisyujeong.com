@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getClassNames, getClassPages } from '@/lib/notion';
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 
@@ -32,6 +32,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
         },
       }),
   );
+
+  // useEffect(() => {
+  //   queryClient.prefetchQuery({
+  //     queryKey: ['notion-pages'],
+  //     queryFn: () => getClassPages('HNINE'),
+  //   });
+  // }, [queryClient]);
 
   return (
     <QueryClientProvider client={queryClient}>
