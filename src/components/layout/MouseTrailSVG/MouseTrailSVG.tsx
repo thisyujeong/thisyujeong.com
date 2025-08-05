@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState, useRef } from 'react';
 import classnames from 'classnames/bind';
 import styles from './MouseTrailSVG.module.scss';
@@ -6,15 +8,16 @@ const cx = classnames.bind(styles);
 
 /* Trail */
 const TAIL_DURATION = 100; // 마우스 라인 흔적 지속 시간 (ms)
-const TRAIL_COLOR = '#28d36a';
+const TRAIL_COLOR = '#000000';
 const TRAIL_WIDTH = 4;
 
 /* Circle */
-const CIRCLE_COLOR = '#28d36a';
-const BASE_RADIUS = 16;
-const MIN_RADIUS = 8;
-const FOCUS_RADIUS = 24; // 마우스 hover 상태
-const DOWN_RADIUS = 12; // 마우스 press 상태
+const CIRCLE_COLOR = '#000000';
+const BASE_RADIUS = 6;
+const MIN_RADIUS = 3;
+const HOVER_RADIUS = 18; // 마우스 hover 상태
+const DOWN_RADIUS = 4; // 마우스 press 상태
+const HOVER_DOWN_RADIUS = 14; // 마우스 hover & press 상태
 const RESTORE_SPEED = 0.09; // 반지름 보간 속도
 
 /**
@@ -52,12 +55,12 @@ function getSmoothPath(points: { x: number; y: number }[]) {
 const MouseTrailSVG = () => {
   const [points, setPoints] = useState<{ x: number; y: number; createdAt: number }[]>([]); // 지나온 포인트 정보
   const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
   const [mouse, setMouse] = useState<{ x: number; y: number }>({
-    x: window.innerWidth / 2,
-    y: window.innerHeight / 2,
+    x: 0,
+    y: 0,
   });
   const [radius, setRadius] = useState(BASE_RADIUS);
   const [isHover, setIsHover] = useState(false);
@@ -70,6 +73,11 @@ const MouseTrailSVG = () => {
     const handleResize = () => {
       setWindowSize({ width: window.innerWidth, height: window.innerHeight });
     };
+
+    // 초기 크기 설정
+    setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    setMouse({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -81,16 +89,26 @@ const MouseTrailSVG = () => {
       const y = e.clientY;
       setMouse({ x, y });
 
-      // hover 감지: pointer 커서가 적용된 요소 위인지 확인
-      const el = document.elementFromPoint(x, y) as HTMLElement | null;
+      // hover 감지: CSS :hover 선택자를 활용한 더 간단한 방법
+      const hoveredElements = document.querySelectorAll(':hover');
+      let isInteractive = false;
 
-      if (el) {
-        const style = window.getComputedStyle(el);
-        setIsHover(style.cursor === 'pointer');
-      } else {
-        setIsHover(false);
-      }
-      // points에 추가
+      // 현재 hover된 모든 요소들을 확인
+      hoveredElements.forEach(el => {
+        const element = el as HTMLElement;
+        const isInteractiveElement =
+          element.tagName === 'A' ||
+          element.tagName === 'BUTTON' ||
+          element.getAttribute('role') === 'button' ||
+          !!element.onclick ||
+          element.classList.contains('hover-target');
+
+        if (isInteractiveElement) {
+          isInteractive = true;
+        }
+      });
+
+      setIsHover(isInteractive);
       setPoints(prev => [...prev, { x, y, createdAt: Date.now() }]);
     };
 
@@ -133,12 +151,11 @@ const MouseTrailSVG = () => {
 
       let targetRadius = BASE_RADIUS;
 
-      // Hover
-      if (isHover) targetRadius = FOCUS_RADIUS;
-      // Pressing
+      if (isHover && isPress) targetRadius = HOVER_DOWN_RADIUS;
+      else if (isHover) targetRadius = HOVER_RADIUS;
       else if (isPress) targetRadius = DOWN_RADIUS;
-      // 속도 기반 사이즈 조절
       else {
+        // 속도 기반 사이즈 조절
         const now = performance.now(); // 현재 속도
         if (prevMouse.current) {
           const dx = mouse.x - prevMouse.current.x;

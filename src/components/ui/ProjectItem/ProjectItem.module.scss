@@ -1,0 +1,51 @@
+.project-item {
+  position: relative;
+  width: 100%;
+  padding: rem(20) rem(30);
+  display: grid;
+  grid-template-columns: 1fr rem(300) rem(80);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: rem(3) solid $black-color;
+  transition: 0.3s;
+
+  &:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
+  &:hover {
+    border-color: $border-mute-color;
+    background-color: $background-hover-color;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: rem(3);
+    right: 0;
+    bottom: rem(-3);
+    transition: width 0.5s ease-in-out;
+    background-color: $border-accent-color;
+  }
+}
+
+.project-title {
+  font-size: rem(32);
+  font-weight: 400;
+}
+
+.project-date {
+  text-align: center;
+  font-size: rem(16);
+}
+
+.project-class {
+  display: inline-block;
+  color: $accent-color;
+  font-size: rem(16);
+  text-align: center;
+  font-weight: 700;
+  opacity: 0.6;
+}
