@@ -10,6 +10,8 @@ const cx = classnames.bind(styles);
 export default async function Home() {
   const data = await getPages();
 
+  if (!data) return null;
+
   return (
     <PageDataProviderWrapper value={data}>
       <div className={cx('container')}>

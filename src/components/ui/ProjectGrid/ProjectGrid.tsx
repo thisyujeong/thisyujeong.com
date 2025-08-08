@@ -99,7 +99,6 @@ const ProjectGrid = () => {
     <div className={cx('project-container')} ref={containerRef}>
       <div className={cx('project-list')} ref={listRef}>
         {data.map((project: NotionPage) => {
-          console.log('project', project);
           const name = project.properties.Name.title[0].plain_text;
           const slug = project.properties.Slug.rich_text[0].plain_text;
           const nameEng = project.properties.NameEng?.rich_text[0]?.plain_text;
