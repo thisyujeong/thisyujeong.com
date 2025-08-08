@@ -1,114 +1,98 @@
 'use client';
 
-import React, { useLayoutEffect, useRef, useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import styles from './ProjectGrid.module.scss';
 import classnames from 'classnames/bind';
 import { usePageData } from '@/contexts/PageDataContext';
 import Link from 'next/link';
 import gsap from 'gsap';
-import { staggerFadeIn } from '@/lib/gsap/animation';
 import Image from 'next/image';
 import { NotionPage } from '@/lib/notion/schema';
+import { useGSAP } from '@gsap/react';
 
 const cx = classnames.bind(styles);
 
-const blindDirections = ['left', 'right', 'up', 'down'];
+const directions = ['left', 'right', 'up', 'down'];
 
 const ProjectGrid = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const listRef = useRef<HTMLDivElement>(null);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const cardRefs = useRef<(HTMLElement | null)[]>([]);
 
-  const { data, classifications } = usePageData();
+  const { data, currentTab } = usePageData();
 
-  // 이미지 로드 완료 확인
-  useEffect(() => {
-    if (!data) return;
-    const images = listRef.current?.querySelectorAll('img');
-    if (!images || images.length === 0) {
-      setImagesLoaded(true);
-      return;
-    }
-    let loadedCount = 0;
-    images.forEach(img => {
-      if (img.complete) {
-        loadedCount++;
-      } else {
-        img.addEventListener('load', () => {
-          loadedCount++;
-          if (loadedCount === images.length) setImagesLoaded(true);
-        });
-        img.addEventListener('error', () => {
-          loadedCount++;
-          if (loadedCount === images.length) setImagesLoaded(true);
-        });
+  useGSAP(() => {
+    if (!cardRefs.current || !data) return;
+
+    cardRefs.current.forEach((card, index) => {
+      if (!card) return;
+
+      const direction = directions[Math.floor(Math.random() * directions.length)];
+      const blind = card.querySelector('[data-blind]');
+      const image = card.querySelector('img');
+      const texts = Array.from(card.querySelectorAll('span, h3'));
+
+      // 초기화
+      gsap.killTweensOf([card, blind, image, ...texts]);
+
+      // texts
+      gsap.set(texts, { opacity: 0, y: 10 });
+      gsap.to(texts, { delay: index * 0.1, opacity: 1, stagger: 0.1, y: 0 });
+
+      // blind timeline
+      const tl = gsap.timeline();
+      tl.set(image, { opacity: 0 });
+
+      if (direction === 'up') {
+        tl.set(blind, { top: 'unset', bottom: 0, width: '100%', height: '0' });
+        tl.to(blind, { height: '100%' }) //
+          .to(image, { opacity: 1, duration: 0 })
+          .to(blind, { top: 0, bottom: 'unset', height: '0' });
+      }
+
+      if (direction === 'down') {
+        tl.set(blind, { top: 0, bottom: 'unset', width: '100%', height: '0' });
+        tl.to(blind, { height: '100%' }) //
+          .to(image, { opacity: 1, duration: 0 })
+          .to(blind, { top: 'unset', bottom: 0, height: '0' });
+      }
+
+      if (direction === 'left') {
+        tl.set(blind, { right: 0, left: 'unset', width: '0', height: '100%' });
+        tl.to(blind, { width: '100%' }) //
+          .to(image, { opacity: 1, duration: 0 })
+          .to(blind, { right: 'unset', left: 0, width: '0' });
+      }
+
+      if (direction === 'right') {
+        tl.set(blind, { right: 'unset', left: 0, width: '0', height: '100%' });
+        tl.to(blind, { width: '100%' }) //
+          .to(image, { opacity: 1, duration: 0 })
+          .to(blind, { right: 0, left: 'unset', width: '0' });
       }
     });
-    if (loadedCount === images.length) setImagesLoaded(true);
-  }, [data]);
-
-  useLayoutEffect(() => {
-    if (!containerRef.current || !listRef.current || !data || !imagesLoaded) return;
-    const blinds = listRef.current.querySelectorAll('[data-blind]');
-    const images = listRef.current.querySelectorAll('img');
-
-    const titleLines = listRef.current.querySelectorAll('span, h3');
-    staggerFadeIn(Array.from(titleLines), 0.1);
-
-    // blind animation
-    gsap.to(containerRef.current, {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: 'top bottom',
-        onEnter: () => {
-          blinds.forEach((blind, index) => {
-            images[index].style.opacity = '0';
-            const direction = blind.getAttribute('data-blind');
-            const tl = gsap.timeline();
-
-            if (direction === 'up') {
-              tl.from(blind, { top: 'unset', bottom: 0, width: '100%', height: '0' })
-                .to(blind, { top: 0, bottom: 'unset', height: '100%', duration: 0 })
-                .to(images[index], { opacity: 1, duration: 0 })
-                .to(blind, { height: '0' });
-            } else if (direction === 'down') {
-              tl.from(blind, { top: 0, bottom: 'unset', width: '100%', height: '0' })
-                .to(blind, { top: 'unset', bottom: 0, height: '100%', duration: 0 })
-                .to(images[index], { opacity: 1, duration: 0 })
-                .to(blind, { height: '0' });
-            } else if (direction === 'left') {
-              tl.from(blind, { right: 0, left: 'unset', width: 0, height: '100%' })
-                .to(blind, { right: 'unset', left: 0, width: '100%', duration: 0 })
-                .to(images[index], { opacity: 1, duration: 0 })
-                .to(blind, { width: '0' });
-            } else if (direction === 'right') {
-              tl.from(blind, { right: 'unset', left: 0, width: 0, height: '100%' })
-                .to(blind, { right: 0, left: 'unset', width: '100%', duration: 0 })
-                .to(images[index], { opacity: 1, duration: 0 })
-                .to(blind, { width: '0' });
-            }
-          });
-        },
-      },
-    });
-  }, [imagesLoaded, data]);
+  }, [data, currentTab]);
 
   if (!data) return <p>프로젝트 없음</p>;
 
   return (
     <div className={cx('project-container')} ref={containerRef}>
-      <div className={cx('project-list')} ref={listRef}>
+      <div className={cx('project-list')}>
         {data.map((project: NotionPage, idx: number) => {
           const name = project.properties.Name.title[0].plain_text;
           const slug = project.properties.Slug.rich_text[0].plain_text;
           const nameEng = project.properties.NameEng?.rich_text[0]?.plain_text;
           const classification = project.properties.Class.select?.name;
-          const thumbnail = project.properties.Thumbnail.files[0]?.file.url;
           const color = project.properties.Color.rich_text[0]?.plain_text;
-          const direction = blindDirections[idx % blindDirections.length];
 
           return (
-            <Link href={`/project/${slug}`} key={project.id} className={cx('project-item')}>
+            <Link
+              href={`/project/${slug}`}
+              key={project.id}
+              className={cx('project-item')}
+              ref={el => {
+                cardRefs.current[idx] = el;
+              }}
+            >
               <div className={cx('project-inner')}>
                 <div className={cx('project-content')}>
                   <span className={cx('classification')}>{classification}</span>
@@ -118,9 +102,16 @@ const ProjectGrid = () => {
                   <div
                     className={cx('blind')}
                     style={{ backgroundColor: color }}
-                    data-blind={direction}
+                    data-blind={true}
                   />
-                  <Image src={thumbnail} width={0} height={0} sizes="400px" alt={name} priority />
+                  <Image
+                    src={`/images/project/thumbnail-${slug}.webp`}
+                    width={0}
+                    height={0}
+                    sizes="400px"
+                    alt={name}
+                    priority
+                  />
                 </div>
               </div>
             </Link>
