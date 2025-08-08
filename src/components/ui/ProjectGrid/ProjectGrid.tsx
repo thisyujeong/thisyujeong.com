@@ -103,9 +103,9 @@ const ProjectGrid = () => {
           const slug = project.properties.Slug.rich_text[0].plain_text;
           const nameEng = project.properties.NameEng?.rich_text[0]?.plain_text;
           const classification = project.properties.Class.select?.name;
-          const thumbnail = project.properties.Thumbnail.files[0].file.url;
-          const direction = blindDirections[Math.floor(Math.random() * blindDirections.length)];
+          const thumbnail = project.properties.Thumbnail.files[0]?.file.url;
           const color = project.properties.Color.rich_text[0]?.plain_text;
+          const direction = blindDirections[Math.floor(Math.random() * blindDirections.length)];
 
           return (
             <Link href={`/project/${slug}`} key={project.id} className={cx('project-item')}>
