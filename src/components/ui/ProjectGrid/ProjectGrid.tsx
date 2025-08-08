@@ -19,7 +19,7 @@ const ProjectGrid = () => {
   const listRef = useRef<HTMLDivElement>(null);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  const data = usePageData();
+  const { data, classifications } = usePageData();
 
   // 이미지 로드 완료 확인
   useEffect(() => {
@@ -98,14 +98,14 @@ const ProjectGrid = () => {
   return (
     <div className={cx('project-container')} ref={containerRef}>
       <div className={cx('project-list')} ref={listRef}>
-        {data.map((project: NotionPage) => {
+        {data.map((project: NotionPage, idx: number) => {
           const name = project.properties.Name.title[0].plain_text;
           const slug = project.properties.Slug.rich_text[0].plain_text;
           const nameEng = project.properties.NameEng?.rich_text[0]?.plain_text;
           const classification = project.properties.Class.select?.name;
           const thumbnail = project.properties.Thumbnail.files[0]?.file.url;
           const color = project.properties.Color.rich_text[0]?.plain_text;
-          const direction = blindDirections[Math.floor(Math.random() * blindDirections.length)];
+          const direction = blindDirections[idx % blindDirections.length];
 
           return (
             <Link href={`/project/${slug}`} key={project.id} className={cx('project-item')}>

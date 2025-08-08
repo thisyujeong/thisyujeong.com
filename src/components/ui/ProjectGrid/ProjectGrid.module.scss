@@ -7,7 +7,6 @@
 
 .project-list {
   position: relative;
-  padding: 0 rem(44);
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -15,8 +14,8 @@
 }
 
 .project-item {
-  width: rem(400);
   width: 100%;
+  height: fit-content;
   &:hover {
     .project-image {
       clip-path: inset(5% 5% 5% 5%);

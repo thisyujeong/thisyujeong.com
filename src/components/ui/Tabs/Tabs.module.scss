@@ -1,0 +1,43 @@
+.tabs {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: rem(16);
+  button {
+    position: relative;
+    font-size: rem(32);
+    font-weight: 500;
+    background-color: transparent;
+    color: $border-mute-color;
+    transition: 0.3s;
+    line-height: 1;
+    cursor: pointer;
+
+    &:not(.on) {
+      @extend .link;
+    }
+
+    &::before {
+      content: '⇢\00a0';
+      position: absolute;
+      top: 50%;
+      left: rem(-28);
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+  button.on {
+    color: $text-color;
+    padding-left: rem(32);
+    &::before {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}

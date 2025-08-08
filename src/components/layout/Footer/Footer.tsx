@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={cx('footer-content')}>
         <div className={cx('contact')}>
           <div className={cx('contact-email')}>
-            <a href={`mailto:${metadata.email}`}>Drop me a line (-&gt;)</a>
+            <a href={`mailto:${metadata.email}`}>Let&apos;s Together</a>
           </div>
 
           <p className={cx('copyright')}>

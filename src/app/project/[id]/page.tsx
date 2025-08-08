@@ -1,4 +1,4 @@
-import ProjectPage from '@/components/pages/project/ProjectPage';
+import { getPageBySlug } from '@/lib/notion';
 
 interface ProjectPageProps {
   params: {
@@ -6,6 +6,14 @@ interface ProjectPageProps {
   };
 }
 
-export default function Project({ params }: ProjectPageProps) {
-  return <ProjectPage id={params.id} />;
+export default async function Project({ params }: ProjectPageProps) {
+  const page = await getPageBySlug(params.id);
+  console.log('🔥page', page);
+
+  return (
+    <div>
+      <h1>Page Id: {params.id}</h1>
+      {JSON.stringify(page)}
+    </div>
+  );
 }

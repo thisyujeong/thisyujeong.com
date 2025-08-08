@@ -8,11 +8,11 @@ const cx = classnames.bind(styles);
 
 /* Trail */
 const TAIL_DURATION = 100; // 마우스 라인 흔적 지속 시간 (ms)
-const TRAIL_COLOR = '#000000';
+const TRAIL_COLOR = '#ff2261';
 const TRAIL_WIDTH = 4;
 
 /* Circle */
-const CIRCLE_COLOR = '#000000';
+const CIRCLE_COLOR = '#ff2261';
 const BASE_RADIUS = 6;
 const MIN_RADIUS = 3;
 const HOVER_RADIUS = 18; // 마우스 hover 상태
@@ -198,7 +198,7 @@ const MouseTrailSVG = () => {
     <div className={cx('cursor-field')}>
       <svg width={windowSize.width} height={windowSize.height}>
         {/* 마우스 따라다니는 라인 */}
-        {points.length > 1 && (
+        {/* {points.length > 1 && (
           <path
             d={pathD}
             fill="none"
@@ -207,7 +207,7 @@ const MouseTrailSVG = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-        )}
+        )} */}
         {/* 마우스 중심 원 */}
         <circle
           cx={mouse.x}
