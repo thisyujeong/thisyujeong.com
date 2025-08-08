@@ -167,5 +167,6 @@ export const NotionPageSchema = z.object({
 });
 
 export const NotionPagesSchema = z.array(NotionPageSchema);
+export const ClassicationSchema = z.array(z.string());
 
 export type NotionPage = z.infer<typeof NotionPageSchema>;

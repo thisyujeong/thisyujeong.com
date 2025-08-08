@@ -1,5 +1,5 @@
 import { cache } from 'react';
-import { NotionPageSchema, NotionPagesSchema } from './schema';
+import { ClassicationSchema, NotionPageSchema, NotionPagesSchema } from './schema';
 
 const API_BASE_URL = process.env.API_BASE_URL;
 
@@ -75,5 +75,15 @@ export const getPageBySlug = cache(async (slug: string) => {
  */
 export const getClassNames = cache(async () => {
   const res = await fetch(API_BASE_URL + '/api/notion/classNames');
-  return res.json();
+  const json = await res.json();
+
+  const parsed = ClassicationSchema.safeParse(json);
+
+  if (!parsed.success) {
+    console.log('InvalidJSON:', json);
+    console.log(parsed.error);
+    throw new Error('Invalid response schema');
+  }
+
+  return parsed.data;
 });

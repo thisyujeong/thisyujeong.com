@@ -3,5 +3,17 @@
 }
 
 .hero {
-  padding: rem(100) 0;
+  padding: rem(120) 0 rem(100);
+}
+
+.content {
+  padding: 0 rem(44);
+  display: grid;
+  grid-template-columns: rem(280) 1fr;
+  gap: rem(40);
+}
+
+.tabs-container {
+  padding: rem(20) 0;
+  margin-bottom: rem(40);
 }

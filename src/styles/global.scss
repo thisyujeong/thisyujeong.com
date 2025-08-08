@@ -59,6 +59,27 @@ body {
 .stagger-item {
   opacity: 0;
 }
+
+.light-source {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 0;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+
+  background: linear-gradient(
+    180deg,
+    #020024 0%,
+    #033923 20%,
+    #2b9268 60%,
+    #64cca2 80%,
+    #f4f9fa 100%
+  );
+}
+
 // @media screen and (max-width: 1280px) {
 //   html {
 //     font-size: 100vw / 1280 * 16;
