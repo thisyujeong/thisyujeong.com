@@ -1,6 +1,8 @@
 import { cache } from 'react';
 import { NotionPageSchema, NotionPagesSchema } from './schema';
 
+const API_BASE_URL = process.env.API_BASE_URL;
+
 const parsePagesResponse = async (res: Response) => {
   if (!res.ok) {
     let errorMessage = 'Failed to fetch Notion data';
@@ -29,7 +31,7 @@ const parsePagesResponse = async (res: Response) => {
  * 모든 페이지 데이터 불러오기
  */
 export const getPages = cache(async () => {
-  const res = await fetch('/api/notion');
+  const res = await fetch(API_BASE_URL + '/api/notion');
   return parsePagesResponse(res);
 });
 
@@ -39,7 +41,7 @@ export const getPages = cache(async () => {
  */
 export const getClassPages = cache(async (classification: string) => {
   const params = new URLSearchParams({ class: classification });
-  const res = await fetch(`/api/notion/classification?${params.toString()}`);
+  const res = await fetch(`${API_BASE_URL}/api/notion/classification?${params.toString()}`);
   return parsePagesResponse(res);
 });
 
@@ -49,7 +51,7 @@ export const getClassPages = cache(async (classification: string) => {
  */
 export const getPageBySlug = cache(async (slug: string) => {
   const params = new URLSearchParams({ slug });
-  const res = await fetch(`/api/notion/slug?${params.toString()}`);
+  const res = await fetch(`${API_BASE_URL}/api/notion/slug?${params.toString()}`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch Notion data');
@@ -72,6 +74,6 @@ export const getPageBySlug = cache(async (slug: string) => {
  * @returns 클래스 이름 목록
  */
 export const getClassNames = cache(async () => {
-  const res = await fetch('/api/notion/classNames');
+  const res = await fetch(API_BASE_URL + '/api/notion/classNames');
   return res.json();
 });

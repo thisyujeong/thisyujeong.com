@@ -1,12 +1,14 @@
+'use client';
+
 import React, { useLayoutEffect, useRef, useEffect, useState } from 'react';
 import styles from './ProjectGrid.module.scss';
 import classnames from 'classnames/bind';
-import { useQuery } from '@tanstack/react-query';
-import { getClassPages } from '@/lib/notion';
+import { usePageData } from '@/contexts/PageDataContext';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { staggerFadeIn } from '@/lib/gsap/animation';
 import Image from 'next/image';
+import { NotionPage } from '@/lib/notion/schema';
 
 const cx = classnames.bind(styles);
 
@@ -17,10 +19,7 @@ const ProjectGrid = () => {
   const listRef = useRef<HTMLDivElement>(null);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  const { data } = useQuery({
-    queryKey: ['notion-pages'],
-    queryFn: () => getClassPages('HNINE'),
-  });
+  const data = usePageData();
 
   // 이미지 로드 완료 확인
   useEffect(() => {
@@ -99,14 +98,15 @@ const ProjectGrid = () => {
   return (
     <div className={cx('project-container')} ref={containerRef}>
       <div className={cx('project-list')} ref={listRef}>
-        {data.map(project => {
+        {data.map((project: NotionPage) => {
+          console.log('project', project);
           const name = project.properties.Name.title[0].plain_text;
           const slug = project.properties.Slug.rich_text[0].plain_text;
           const nameEng = project.properties.NameEng?.rich_text[0]?.plain_text;
           const classification = project.properties.Class.select?.name;
-
+          const thumbnail = project.properties.Thumbnail.files[0].file.url;
           const direction = blindDirections[Math.floor(Math.random() * blindDirections.length)];
-          const color = project.properties.Color.rich_text[0].plain_text;
+          const color = project.properties.Color.rich_text[0]?.plain_text;
 
           return (
             <Link href={`/project/${slug}`} key={project.id} className={cx('project-item')}>
@@ -121,14 +121,7 @@ const ProjectGrid = () => {
                     style={{ backgroundColor: color }}
                     data-blind={direction}
                   />
-                  <Image
-                    src={`/images/project/thumbnail-${slug}.png`}
-                    width={0}
-                    height={0}
-                    sizes="400px"
-                    alt={name}
-                    priority
-                  />
+                  <Image src={thumbnail} width={0} height={0} sizes="400px" alt={name} priority />
                 </div>
               </div>
             </Link>

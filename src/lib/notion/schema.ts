@@ -154,6 +154,13 @@ export const NotionPageSchema = z.object({
         }),
       ),
     }),
+    Thumbnail: z.object({
+      id: z.string(),
+      type: z.string(),
+      files: z.array(
+        z.object({ name: z.string(), type: z.string(), file: z.object({ url: z.string() }) }),
+      ),
+    }),
   }),
   url: z.string(),
   public_url: z.null(),

@@ -19,17 +19,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <Providers>
-          {/* mouse trail */}
-          {/* <MouseTrailSVG /> */}
+        {/* mouse trail */}
+        {/* <MouseTrailSVG /> */}
 
-          {/* scroll smoother */}
-          <Header />
+        {/* scroll smoother */}
+        <Header />
 
-          <ScrollWrapper>
-            <DefaultLayout>{children}</DefaultLayout>
-          </ScrollWrapper>
-        </Providers>
+        <ScrollWrapper>
+          <DefaultLayout>{children}</DefaultLayout>
+        </ScrollWrapper>
       </body>
     </html>
   );
