@@ -1,14 +1,14 @@
 'use client';
 
 import React, { useRef } from 'react';
-import styles from './ProjectGrid.module.scss';
-import classnames from 'classnames/bind';
-import { usePageData } from '@/contexts/PageDataContext';
+import Image from 'next/image';
 import Link from 'next/link';
 import gsap from 'gsap';
-import Image from 'next/image';
-import { NotionPage } from '@/lib/notion/schema';
+import styles from './ProjectGrid.module.scss';
+import classnames from 'classnames/bind';
 import { useGSAP } from '@gsap/react';
+import { NotionPage } from '@/lib/notion/schema';
+import { usePageData } from '@/contexts/PageDataContext';
 
 const cx = classnames.bind(styles);
 
@@ -29,7 +29,7 @@ const ProjectGrid = () => {
       const direction = directions[Math.floor(Math.random() * directions.length)];
       const blind = card.querySelector('[data-blind]');
       const image = card.querySelector('img');
-      const texts = Array.from(card.querySelectorAll('span, h3'));
+      const texts = Array.from(card.querySelectorAll('.animate'));
 
       // 초기화
       gsap.killTweensOf([card, blind, image, ...texts]);
@@ -83,6 +83,14 @@ const ProjectGrid = () => {
           const nameEng = project.properties.NameEng?.rich_text[0]?.plain_text;
           const classification = project.properties.Class.select?.name;
           const color = project.properties.Color.rich_text[0]?.plain_text;
+          const description = project.properties.Description.rich_text[0]?.plain_text;
+
+          const isCurrentTab = classification === currentTab || currentTab === 'All';
+
+          const stacks = project.properties.Stack.multi_select.map((stack: any) => stack.name);
+          console.log(stacks);
+
+          if (!isCurrentTab) return null;
 
           return (
             <Link
@@ -94,9 +102,9 @@ const ProjectGrid = () => {
               }}
             >
               <div className={cx('project-inner')}>
-                <div className={cx('project-content')}>
-                  <span className={cx('classification')}>{classification}</span>
-                  <h3 className={cx('title')}>{nameEng ?? name}</h3>
+                <div className={cx('project-header')}>
+                  <span className={cx('classification', 'animate')}>{classification}</span>
+                  <h3 className={cx('title', 'animate')}>{nameEng ?? name}</h3>
                 </div>
                 <div className={cx('project-image')}>
                   <div
@@ -112,6 +120,14 @@ const ProjectGrid = () => {
                     alt={name}
                     priority
                   />
+                </div>
+                <div className={cx('project-content', 'animate')}>
+                  <div className={cx('stacks')}>
+                    {stacks.map(item => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </div>
+                  <p className={cx('description')}>{description}</p>
                 </div>
               </div>
             </Link>

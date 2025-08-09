@@ -17,7 +17,7 @@
 
   .logo {
     font-size: rem(20);
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -38,11 +38,11 @@
 
 .etc {
   button {
-    padding: rem(10) rem(20);
+    padding: rem(6) rem(16);
     font-size: rem(15);
-    background-color: $primary-color;
-    cursor: pointer;
     font-weight: 600;
+    background-color: $black-color;
+    cursor: pointer;
 
     span {
       @extend .link;

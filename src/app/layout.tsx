@@ -3,7 +3,7 @@ import { metadata as metadataConfig } from '@/constants/metadata';
 import '@/styles/global.scss';
 import DefaultLayout from '@/components/layout/DefaultLayout/DefaultLayout';
 import ScrollWrapper from '@/components/layout/ScrollWrapper/ScrollWrapper';
-import MouseTrailSVG from '@/components/layout/MouseTrailSVG/MouseTrailSVG';
+import CursorTrailSVG from '@/components/layout/CursorTrailSVG/CursorTrailSVG';
 import Header from '@/components/layout/Header/Header';
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko">
       <body>
         {/* mouse trail */}
-        <MouseTrailSVG />
+        <CursorTrailSVG />
 
         {/* scroll smoother */}
         <Header />

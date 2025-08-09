@@ -14,9 +14,9 @@
   clip: rect(0 0 0 0);
 }
 
-// * {
-//   cursor: none;
-// }
+* {
+  cursor: none;
+}
 
 ::selection {
   background-color: $selection-color;

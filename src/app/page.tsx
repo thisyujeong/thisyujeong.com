@@ -1,10 +1,10 @@
 import { getClassNames, getPages } from '@/lib/notion';
-import RollingTitle from '@/components/ui/RollingTitle/RollingTitle';
 import classnames from 'classnames/bind';
 import styles from './page.module.scss';
+import RollingTitle from '@/components/ui/RollingTitle/RollingTitle';
 import PageDataProviderWrapper from './PageDataProviderWrapper';
 import ProjectGrid from '@/components/ui/ProjectGrid/ProjectGrid';
-import Tabs from '@/components/ui/Tabs/Tabs';
+import ProjectTabs from '@/components/ui/ProjectTabs/ProjectTabs';
 
 const cx = classnames.bind(styles);
 
@@ -22,7 +22,7 @@ export default async function Home() {
         </section>
         <section className={cx('content')}>
           <div className={cx('tabs-container')}>
-            <Tabs />
+            <ProjectTabs />
           </div>
           <ProjectGrid />
         </section>
