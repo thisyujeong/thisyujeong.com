@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: flex-start;
   gap: rem(16);
+  height: 100%;
+  width: 100%;
+
   button {
     position: relative;
     font-size: rem(32);
@@ -11,6 +14,7 @@
     color: $border-mute-color;
     transition: 0.3s;
     line-height: 1;
+    text-align: left;
     cursor: pointer;
 
     &:not(.on) {

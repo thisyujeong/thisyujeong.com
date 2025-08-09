@@ -3,8 +3,7 @@ import classnames from 'classnames/bind';
 import styles from './page.module.scss';
 import RollingTitle from '@/components/ui/RollingTitle/RollingTitle';
 import PageDataProviderWrapper from './PageDataProviderWrapper';
-import ProjectGrid from '@/components/ui/ProjectGrid/ProjectGrid';
-import ProjectTabs from '@/components/ui/ProjectTabs/ProjectTabs';
+import ProjectWrapper from '@/components/ui/ProjectWrapper/ProjectWrapper';
 
 const cx = classnames.bind(styles);
 
@@ -21,10 +20,7 @@ export default async function Home() {
           <RollingTitle />
         </section>
         <section className={cx('content')}>
-          <div className={cx('tabs-container')}>
-            <ProjectTabs />
-          </div>
-          <ProjectGrid />
+          <ProjectWrapper />
         </section>
       </div>
     </PageDataProviderWrapper>
