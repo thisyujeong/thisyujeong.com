@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { usePageData } from '@/contexts/PageDataContext';
-import styles from './Tabs.module.scss';
+import styles from './ProjectTabs.module.scss';
 import classnames from 'classnames/bind';
 
 const cx = classnames.bind(styles);
 
-const Tabs = () => {
+const ProjectTabs = () => {
   const { data, classifications, currentTab, setCurrentTab } = usePageData();
 
   return (
@@ -32,4 +32,4 @@ const Tabs = () => {
   );
 };
 
-export default Tabs;
+export default ProjectTabs;

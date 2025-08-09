@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import classnames from 'classnames/bind';
 import styles from './Header.module.scss';
-import { metadata } from '@/constants/metadata';
 import Link from 'next/link';
 
 const cx = classnames.bind(styles);
@@ -29,15 +28,11 @@ const Header = () => {
   return (
     <header className={cx('header', { 'is-hidden': !isVisible })}>
       <h1 className={cx('logo')}>
-        <Link href="/">TY</Link>
+        <Link href="/">T ― Y</Link>
       </h1>
 
       <nav className={cx('navigation')}>
         <ul>
-          <li>
-            {/* 업무 */}
-            <Link href="#">works</Link>
-          </li>
           <li>
             {/* 사이드 프로젝트 */}
             <Link href="#">archive</Link>

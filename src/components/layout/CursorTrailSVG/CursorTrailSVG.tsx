@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import classnames from 'classnames/bind';
-import styles from './MouseTrailSVG.module.scss';
+import styles from './CursorTrailSVG.module.scss';
 
 const cx = classnames.bind(styles);
 
@@ -52,21 +52,27 @@ function getSmoothPath(points: { x: number; y: number }[]) {
   return d;
 }
 
-const MouseTrailSVG = () => {
+const CursorTrailSVG = () => {
+  // 모바일 환경 감지
   const [points, setPoints] = useState<{ x: number; y: number; createdAt: number }[]>([]); // 지나온 포인트 정보
-  const [windowSize, setWindowSize] = useState({
-    width: 0,
-    height: 0,
-  });
-  const [mouse, setMouse] = useState<{ x: number; y: number }>({
-    x: 0,
-    y: 0,
-  });
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+  const [mouse, setMouse] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [radius, setRadius] = useState(BASE_RADIUS);
   const [isHover, setIsHover] = useState(false);
   const [isPress, setIsPress] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const prevMouse = useRef<{ x: number; y: number; t: number } | null>(null);
+
+  // 터치 이벤트 지원 여부로 모바일 감지
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(
+        typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0),
+      );
+    };
+    checkMobile();
+  }, []);
 
   // 윈도우 크기 동기화
   useEffect(() => {
@@ -194,11 +200,13 @@ const MouseTrailSVG = () => {
   // 부드러운 곡선 path 생성
   const pathD = getSmoothPath(points);
 
+  if (isMobile) return null;
+
   return (
     <div className={cx('cursor-field')}>
       <svg width={windowSize.width} height={windowSize.height}>
         {/* 마우스 따라다니는 라인 */}
-        {/* {points.length > 1 && (
+        {points.length > 1 && (
           <path
             d={pathD}
             fill="none"
@@ -207,7 +215,7 @@ const MouseTrailSVG = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-        )} */}
+        )}
         {/* 마우스 중심 원 */}
         <circle
           cx={mouse.x}
@@ -222,4 +230,4 @@ const MouseTrailSVG = () => {
   );
 };
 
-export default MouseTrailSVG;
+export default CursorTrailSVG;
