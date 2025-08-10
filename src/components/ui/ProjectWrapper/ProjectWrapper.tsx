@@ -27,7 +27,6 @@ const ProjectWrapper = () => {
         end: 'bottom center',
         pin: tabsRef.current,
         pinSpacing: false,
-        markers: true,
       },
     });
 

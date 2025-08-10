@@ -1,4 +1,5 @@
 import { Client } from '@notionhq/client';
+import { NotionToMarkdown } from 'notion-to-md';
 
 // 환경 변수 검증
 const notionToken = process.env.NOTION_TOKEN;
@@ -15,6 +16,15 @@ if (!databaseId) {
 // Notion 클라이언트 인스턴스 생성
 export const notion = new Client({ auth: notionToken });
 export const NOTION_DATABASE_ID = databaseId;
+
+export const notionToMarkdown = new NotionToMarkdown({
+  notionClient: notion,
+});
+
+export const fetchArticleContent = async (pageId: string) => {
+  const mdBlocks = await notionToMarkdown.pageToMarkdown(pageId);
+  return notionToMarkdown.toMarkdownString(mdBlocks);
+};
 
 // 공통 에러 처리 함수
 export const handleNotionError = (error: unknown) => {
