@@ -94,6 +94,7 @@ const ProjectGrid = () => {
 
           return (
             <Link
+              prefetch
               href={`/project/${slug}`}
               key={project.id}
               className={cx('project-item')}
