@@ -15,7 +15,6 @@
     transition: 0.3s;
     line-height: 1;
     text-align: left;
-    cursor: pointer;
 
     &:not(.on) {
       @extend .link;
